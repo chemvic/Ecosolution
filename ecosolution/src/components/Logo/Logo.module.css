@@ -1,0 +1,16 @@
+.logo_icon{
+    fill: #173d33;
+     width: 269px;
+    height: 40px;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+  .logo_icon:focus, .logo_icon:hover {
+    fill: #97d28b;
+  }
+  

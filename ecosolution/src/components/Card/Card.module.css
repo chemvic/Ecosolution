@@ -1,0 +1,39 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 148px;
+    height: 197px;
+    background-color:#EAEDF1;
+    padding: 13px 12px 12px 12px;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: 12px;
+    right: 12px;
+    height: 1px;
+    background-color: #97D28B;
+  }
+  .title{
+    font-family: 'Oswald';
+    font-size: 16px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #173D33;
+};
+/* .heading{
+    margin-bottom: 46px;
+} */
+.text{
+    margin-top: 46px;
+}
+.description{
+    font-family: 'FiraSans';
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: -4%;
+    color: #173D33;
+    margin-top: 46px;
+};
