@@ -5,8 +5,9 @@ import css from './App.module.css';
 import Values from 'components/Values/Values';
 import Electricity from 'components/Electricity/Electricity';
 import React, { useState } from 'react';
-import MySlider from 'components/Slider/MySlider';
-
+import Cases from 'components/Cases/Cases';
+// import SliderCard from 'components/SliderCard/SliderCard';
+// import workerImage from './images/Lviv-region.jpg';
 
  const App = () => {
   const [scrollToId, setScrollToId] = useState(null);
@@ -23,7 +24,7 @@ import MySlider from 'components/Slider/MySlider';
      <Hero/>
      <Values id='main' scrollToId={scrollToId}/>
      <Electricity value ="1.134.147.814"/>
-     <MySlider/>
+     <Cases/>     
     </div>
   );
 };

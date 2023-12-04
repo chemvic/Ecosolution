@@ -1,46 +1,112 @@
-.grid_container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:
-      "card1 card2"
-      "card3 card4";
-    gap: 24px;
-  }
-  
-  .card1 { grid-area: card1; }
-  .card2 { grid-area: card2; }
-  .card3 { grid-area: card3; }
-  .card4 { grid-area: card4; }
-  .image1 { grid-area: image1; }
-  .image2 { grid-area: image2; }
-  
-  @media (min-width: 768px) {
-    .grid_container {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, auto);
-      grid-template-areas:
-        "card1 card2 image1"
-        "image2 card3 card4 ";
-    }
-  
-    .image1, .image2 {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      grid-column: span 2; /* Изображение занимает место двух карточек */
-     }
+import React, { useState, useRef, useEffect  } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import workersImage from '../../images/workers.jpg';
+import workerImage from '../../images/man-worker-firld-by-solar-panels 1.jpg';
+import css from './Cases.module.css';
+
+
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import CircumIcon from "@klarr-agency/circum-icons-react";
+import SliderCard from 'components/SliderCard/SliderCard';
+
+
+const Cases = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef(null);
+  const [slidesToShow, setSlidesToShow] = useState(1);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesToShow(window.innerWidth > 767 ? 2 : 1);
+    };
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: slidesToShow,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    beforeChange: (current, next) => setCurrentSlide(next)
+  };
+
+  const next = () => {
+    if (sliderRef.current) {
+        sliderRef.current.slickNext();
+      }
   }
 
-  ////////
-   {/* <div className={css.grid_container}>
-        <div className={css.card1}><Card title='Openness' text='to the world, people, new ideas and projects'/></div>
-        <div className={css.card2}><Card title='Responsibility' text='we are aware that the results of our work have an impact on our lives and the lives of future generations'/></div>
-        <div className={css.card3}><Card title='Innovation' text='we use the latest technology to implement non-standard solutions'/></div>  
-        <div className={css.card4}><Card title='Quality' text='we do not strive to be the first among others, but we want to be the best in our business'/></div>
-        <img className={css.image1} src="../../images/workers.jpg" alt="workers at wind turbines"/>
-        <img className={css.image2} src="../../images/man-worker-firld-by-solar-panels 1.jpg" alt="worker at solar panels"/>
+  const previous = () => {
+    if (sliderRef.current) {
+        sliderRef.current.slickPrev();
+      }
+  }
 
-      </div> */}
+  return (
+    <section  className={css.section}>
+    <div>
+    <div className={css.cases_text}>    
+      <h2 className={css.title}>Successful cases of<br/> our company</h2>       
+    </div>
+        <p>Current Slide: {currentSlide + 1}/5</p>
+
+      <button style={{
+        backgroundColor: 'white',
+        display: 'inline-flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '66px',
+        width: '66px',
+        borderRadius: '50%',
+        border: 'none',
+        cursor: 'pointer'
+      }} onClick={previous}><CircumIcon name="circle_chev_left" color="#000" size="66px" /></button>
+      <button style={{
+        display: 'inline-flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: '66px',
+        width: '66px',
+        borderRadius: '50%',
+        border: 'none',
+        backgroundColor: 'white',
+        cursor: 'pointer'
+      }} onClick={next}><CircumIcon name="circle_chev_right" color="#000" size="66px"/></button>
+    <Slider {...settings}>
+      <div>
+        
+      <SliderCard photo={workerImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
+     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      </div>
+      <div>
+      <SliderCard photo={workersImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
+     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      </div>
+      <div>
+      <SliderCard photo={workerImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
+     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      </div>
+      <div>
+      <SliderCard photo={workersImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
+     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      </div>
+      <div>
+      <SliderCard photo={workerImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
+     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      </div>
+      
+    </Slider>
+    </div></section>
+  );
+};
+
+export default Cases;
 
 

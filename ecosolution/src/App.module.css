@@ -18,7 +18,6 @@
   }
 
 .container {
-  outline: 2px dashed red;
   position: relative;
   /* display: flex;
   flex-direction: column;
@@ -47,7 +46,7 @@
 }
 
 .header{
-  outline: 2px dashed red;
+  
     position: fixed;
     top: 0;
     width: 100%;

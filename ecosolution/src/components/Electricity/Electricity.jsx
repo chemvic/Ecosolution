@@ -4,7 +4,7 @@ const Electricity = ({value}) => {
     <section className={css.section}>
         <div className={css.electro}>
            <div className={css.electricity_text}>    
-      <h2 className={css.title}>Electricity we produced for all time</h2>       
+      <h2 className={css.title}>Electricity we produced<br/> for all time</h2>       
     </div>
     <div className={css.energy}>
       <span className={css.energy_value}>{formattedValue}</span>
