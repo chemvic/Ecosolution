@@ -49,11 +49,11 @@
   
 
   
-  /* Правила для планшетного вида и выше */
+
   @media (min-width: 768px) {
     .grid_container {
         gap: 24px; 
-      grid-template-columns: repeat(3, 1fr); /* Три столбца для планшетного вида и выше */
+      grid-template-columns: repeat(3, 1fr);
     }
   
     .image {

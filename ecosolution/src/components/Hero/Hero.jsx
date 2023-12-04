@@ -3,8 +3,8 @@
 
  const Hero = () => {
     return (<>
-        <section className={css.section}>
-          <div className={css.hero}>
+        <section  className={css.section}>
+          {/* <div className={css.hero}> */}
             <div className={css.wrapper} >
        <h1 className={css.title}>RENEWABLE ENERGY For any task</h1>
       </div>
@@ -43,7 +43,7 @@
 
        <div className={css.hero__overlay}>
         </div>
-          </div>
+          {/* </div> */}
       
 
         </section></>

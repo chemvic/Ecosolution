@@ -1,11 +1,14 @@
  import Logo from '../Logo/Logo';
- import Button from '../Button/Button';
+ import BurgerMenu from '../BurgerMenu/BurgerMenu';
  import css from './Header.module.css';
  const Header = () => {
     return (
       <div className={css.header}>
         <Logo/>
-        <Button className={css.button} text="Get in touch"/>
+        <BurgerMenu/>
+        <button className={css.button} type='button' >
+        Get in touch
+      </button>
       </div>
     );
   };

@@ -4,10 +4,11 @@ import Card from 'components/Card/Card';
 import css from './Values.module.css';
 import workerImage from '../../images/man-worker-firld-by-solar-panels 1.jpg';
 import workersImage from '../../images/workers.jpg';
-const Values = () => {
+const Values = ({id}) => {
+    console.log('Received id:', id);
    return (
-    <section className={css.section}>
-        <div className={css.values}>
+    <section id={id} className={css.section}>
+        <div  className={css.values}>
         <div className={css.values_text}>
           <div className={css.values_title}>
           <h2 className={css.title}>Main values of our company</h2>       
