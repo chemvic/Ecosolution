@@ -1,5 +1,5 @@
 .hero_header{
-  margin: 49px;
+  margin-bottom: 49px;
 }
 
 .wrapper{
@@ -17,7 +17,9 @@
     color: #173D33;
     margin-bottom: 24px;
 }
-
+.title_wrapper{
+  width: 320px;
+}
 .description{
     font-family: 'FiraSans';
     font-size: 16px;
@@ -95,8 +97,8 @@
   }
   .hero_header{
     display: flex;
-    justify-content: space-around;
-    margin: 43px;
+    justify-content: space-between;
+    margin-bottom: 43px;
   }
 }
 

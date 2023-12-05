@@ -6,14 +6,16 @@
         <section  className={css.section}>
          
       <div className={css.hero_header} >
-       <h1 className={css.title}>RENEWABLE ENERGY For any task</h1>
+        <div className={css.title_wrapper}>
+          <h1 className={css.title}>RENEWABLE ENERGY For any task</h1>
+        </div>
       
-      <div className={css.wrapper}>
-        <p className={css.description}>Development and implementation of renewable non-pollutingF energy sources,
+        <div className={css.wrapper}>
+          <p className={css.description}>Development and implementation of renewable non-pollutingF energy sources,
              generating power generation using energy wind, sun, water, biomass
-        </p>
-        <Button text="Learn more"/> 
-      </div>
+          </p>
+          <Button text="Learn more"/> 
+        </div>
        </div>
          
         
