@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Ecosolution/ecosolution/static/css/main.b949aaa9.css",
-    "main.js": "/Ecosolution/ecosolution/static/js/main.1b8a3926.js",
-    "static/media/FiraSans-Regular.ttf": "/Ecosolution/ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
-    "static/media/Wind-turbine.jpg": "/Ecosolution/ecosolution/static/media/Wind-turbine.c7dacde6e99d972e14d9.jpg",
-    "static/media/Oswald-VariableFont_wght.ttf": "/Ecosolution/ecosolution/static/media/Oswald-VariableFont_wght.7cecd0da606d25b0905d.ttf",
-    "static/media/workers.jpg": "/Ecosolution/ecosolution/static/media/workers.47712891b2dca5806f6d.jpg",
-    "static/media/man-worker-firld-by-solar-panels 1.jpg": "/Ecosolution/ecosolution/static/media/man-worker-firld-by-solar-panels 1.ab39f17233c9e9e4d677.jpg",
-    "static/media/slick.svg": "/Ecosolution/ecosolution/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/Ecosolution/ecosolution/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/Ecosolution/ecosolution/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/Ecosolution/ecosolution/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/Ecosolution/ecosolution/index.html",
-    "main.b949aaa9.css.map": "/Ecosolution/ecosolution/static/css/main.b949aaa9.css.map",
-    "main.1b8a3926.js.map": "/Ecosolution/ecosolution/static/js/main.1b8a3926.js.map"
+    "main.css": "/Ecosolution/static/css/main.d62f1f1d.css",
+    "main.js": "/Ecosolution/static/js/main.b31bcd7a.js",
+    "static/media/FiraSans-Regular.ttf": "/Ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
+    "static/media/Wind-turbine.jpg": "/Ecosolution/static/media/Wind-turbine.c7dacde6e99d972e14d9.jpg",
+    "static/media/Oswald-VariableFont_wght.ttf": "/Ecosolution/static/media/Oswald-VariableFont_wght.7cecd0da606d25b0905d.ttf",
+    "static/media/workers.jpg": "/Ecosolution/static/media/workers.47712891b2dca5806f6d.jpg",
+    "static/media/man-worker-firld-by-solar-panels 1.jpg": "/Ecosolution/static/media/man-worker-firld-by-solar-panels 1.ab39f17233c9e9e4d677.jpg",
+    "static/media/slick.svg": "/Ecosolution/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Ecosolution/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Ecosolution/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Ecosolution/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/Ecosolution/index.html",
+    "main.d62f1f1d.css.map": "/Ecosolution/static/css/main.d62f1f1d.css.map",
+    "main.b31bcd7a.js.map": "/Ecosolution/static/js/main.b31bcd7a.js.map"
   },
   "entrypoints": [
-    "static/css/main.b949aaa9.css",
-    "static/js/main.1b8a3926.js"
+    "static/css/main.d62f1f1d.css",
+    "static/js/main.b31bcd7a.js"
   ]
 }
