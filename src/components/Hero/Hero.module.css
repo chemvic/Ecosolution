@@ -136,7 +136,7 @@
     font-style: normal;
     letter-spacing: -0.04em;
     color: #173D33;
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
   .hero__contacts{
     display: flex;
@@ -150,6 +150,9 @@
 
     justify-content:space-evenly;
     /* margin-bottom: 36px;      */
+  }
+  .contacts__item{
+    margin-right: 50px;
   }
 
   }
