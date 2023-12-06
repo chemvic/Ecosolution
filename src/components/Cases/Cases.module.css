@@ -62,23 +62,20 @@
      }
      .wrapper_handlers{
       display: flex;
-      /* justify-content: space-between; */
+      justify-content: space-between;
       align-items: baseline ;
       margin-bottom: 19px;
      }
      .wrapper_buttons{
       margin-left: 126px;
     }
-    .cases_header::before {
+    .cases_header::after {
       content: "";
       position: absolute;
-      /* top: 111px; */
-      /* left: 384px; */
-      /* right: 12px; */
+      left: 384px;     
       width: 1px;
-    height: 48px;
-    background-color: #97D28B;
-    margin: 0 auto;
+      height: 65px;
+      background-color: #97D28B;
     }
      /* .cases_text{
         width: 264px;
@@ -94,6 +91,14 @@
      }
      .wrapper_buttons{
       margin-left: 193px;
+    }
+    .cases_header::after {
+      content: "";
+      position: absolute;
+      left: 610px;        
+      width: 1px;
+      height: 96px;
+      background-color: #97D28B;
     }
      /* .cases_text{
         width: 398px;
