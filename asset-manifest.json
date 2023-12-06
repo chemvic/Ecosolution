@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/Ecosolution/static/css/main.d62f1f1d.css",
-    "main.js": "/Ecosolution/static/js/main.b31bcd7a.js",
+    "main.css": "/Ecosolution/static/css/main.05432f4a.css",
+    "main.js": "/Ecosolution/static/js/main.7b64ac4d.js",
     "static/media/FiraSans-Regular.ttf": "/Ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/Wind-turbine.jpg": "/Ecosolution/static/media/Wind-turbine.c7dacde6e99d972e14d9.jpg",
     "static/media/Oswald-VariableFont_wght.ttf": "/Ecosolution/static/media/Oswald-VariableFont_wght.7cecd0da606d25b0905d.ttf",
+    "static/media/Zhytomyr.jpg": "/Ecosolution/static/media/Zhytomyr.bf1ffcda6f4c75c61693.jpg",
+    "static/media/Rivne.jpg": "/Ecosolution/static/media/Rivne.98340db5db73d045fa8d.jpg",
+    "static/media/Lviv-region.jpg": "/Ecosolution/static/media/Lviv-region.0bcaf0ed840f436a700f.jpg",
+    "static/media/Zaporizhia.jpg": "/Ecosolution/static/media/Zaporizhia.63f26b6ffb75b3940812.jpg",
     "static/media/workers.jpg": "/Ecosolution/static/media/workers.47712891b2dca5806f6d.jpg",
+    "static/media/Kherson.jpg": "/Ecosolution/static/media/Kherson.0a127671a9bd8256c425.jpg",
     "static/media/man-worker-firld-by-solar-panels 1.jpg": "/Ecosolution/static/media/man-worker-firld-by-solar-panels 1.ab39f17233c9e9e4d677.jpg",
     "static/media/slick.svg": "/Ecosolution/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Ecosolution/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Ecosolution/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Ecosolution/index.html",
-    "main.d62f1f1d.css.map": "/Ecosolution/static/css/main.d62f1f1d.css.map",
-    "main.b31bcd7a.js.map": "/Ecosolution/static/js/main.b31bcd7a.js.map"
+    "main.05432f4a.css.map": "/Ecosolution/static/css/main.05432f4a.css.map",
+    "main.7b64ac4d.js.map": "/Ecosolution/static/js/main.7b64ac4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d62f1f1d.css",
-    "static/js/main.b31bcd7a.js"
+    "static/css/main.05432f4a.css",
+    "static/js/main.7b64ac4d.js"
   ]
 }
