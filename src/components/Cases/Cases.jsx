@@ -58,7 +58,7 @@ const Cases = () => {
     <div className={css.cases_text}>    
       <h2 className={css.title}>Successful cases of<br/> our company</h2>       
     </div>
-        <p>Current Slide: {currentSlide + 1}/5</p>
+        <p className={css.current_text}>{currentSlide + 1}/5</p>
 
       <button style={{
         backgroundColor: 'white',
