@@ -2,8 +2,11 @@ import React, { useState, useRef, useEffect  } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import workersImage from '../../images/workers.jpg';
-import workerImage from '../../images/man-worker-firld-by-solar-panels 1.jpg';
+import lvivImage from '../../images/Lviv-region.jpg';
+import zhytomyrImage from '../../images/Zhytomyr.jpg';
+import rivneImage from '../../images/Rivne.jpg';
+import khersonImage from '../../images/Kherson.jpg';
+import zaporImage from '../../images/Zaporizhia.jpg';
 import css from './Cases.module.css';
 
 
@@ -82,24 +85,24 @@ const Cases = () => {
     <Slider {...settings}>
       <div>
         
-      <SliderCard photo={workerImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
+      <SliderCard photo={lvivImage} alt={'Lviv'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
      description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
       </div>
       <div>
-      <SliderCard photo={workersImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
-     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      <SliderCard photo={zhytomyrImage} alt={'Zhytomyr'} title={'Zhytomyr city Private Enterprise “Bosch”'} 
+     description={'Solar Panels for industrial use'} date={'November 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
       </div>
       <div>
-      <SliderCard photo={workerImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
-     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      <SliderCard photo={rivneImage} alt={'Rivne'} title={'Rivne city Private Enterprise “Biotech”'} 
+     description={'Thermal modules'} date={'October 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
       </div>
       <div>
-      <SliderCard photo={workersImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
-     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      <SliderCard photo={khersonImage} alt={'Kherson'} title={'Kherson city Private Enterprise “HealthyFarm”'} 
+     description={'Wind power'} date={'September 2021'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
       </div>
       <div>
-      <SliderCard photo={workerImage} alt={'qwe'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
-     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+      <SliderCard photo={zaporImage} alt={'Zaporizhia'} title={'Zaporizhia city Private Enterprise “Biotech”'} 
+     description={'Mini nuclear stations'} date={'May 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
       </div>
       
     </Slider>

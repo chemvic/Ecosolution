@@ -1,26 +1,51 @@
 .sliderCard{
-    background-color: #EAEDF1;
+  
     display: flex;
     flex-direction: column;
     height: 100%;
-};
-.sliderCard__photo{
-    max-width:320px;             
-};
+    border: 1px solid grey;
+  }
+
  .sliderCard__info{
-    padding: 36px 48px;
+    position: relative;
+    padding: 36px 12px 12px 12px;
     text-align: center;
-    display: inline-block;
-    flex-grow: 1;
-    max-width:320px;
-  };
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    background-color: #EAEDF1;
+    width: calc(100% - 24px) ;  
+    /* flex-grow: 1; */
+  }
+  .sliderCard__info::before {
+    content: "";
+    position: absolute;
+    top: 111px;
+    left: 12px;
+    right: 12px;
+    height: 1px;
+    background-color: #97D28B;
+  }
+  .sliderCard__photo{
+    width: 100%;              
+ }
+  .sliderCard__infoUp{
+    display: flex;
+    justify-content: space-between;   
+  }
+  .sliderCard__infoDown{
+    display: flex;
+    justify-content: space-between;
+
+  }
   .sliderCard__title{
     font-family: 'FiraSans';
     font-size: 18px;
     font-style: normal;
     letter-spacing: -4%;
     color: #173D33;
-  };
+  }
   .sliderCard__description{
     font-family: 'FiraSans';
     font-size: 12px;
@@ -28,33 +53,38 @@
     letter-spacing: -4%;
     color: #173D33;
   }
+
+  @media only screen and (min-width: 360px) and (max-width: 480px){
+    .sliderCard{
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 481px) and (max-width: 767px){
+    .sliderCard{
+      width: 320px; 
+    }
+  }
          
-        @media screen and (min-max-width:768px) {
-            .sliderCard__photo{
-               max-width: 342px;              
-            }; 
-            .sliderCard__info{
-              max-width: 342px;
-              };
+        @media screen and (min-width: 768px) {
+              .sliderCard{
+                width: 342px; 
+              }
               .sliderCard__title{
                 font-size: 20px;         
-              };
+              }
               .sliderCard__description{
                 font-size: 14px;               
               }  
     }
     
     
-    @media screen and (min-max-width: 1280px) {
-         .sliderCard__photo{
-                max-width: 596px;             
-            };
-            .sliderCard__info{
-              max-width: 596px;
-              };
+    @media screen and (min-width: 1280px) {
+                .sliderCard{
+                width: 596px; 
+              }
                 .sliderCard__title{
                 font-size: 24px;         
-              };
+              }
               .sliderCard__description{
                 font-size: 16px;               
               }   

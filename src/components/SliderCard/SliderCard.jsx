@@ -24,7 +24,7 @@ const SliderCard = ({photo, alt, title, description, date}) => {
         borderRadius: '50%',
         border: 'none',
         cursor: 'pointer'}}  type='button' >
-            <CircumIcon name="circle_chev_right" color="#000" size="60px"/>
+            <CircumIcon name="circle_chev_right" color="#000" size="80px"/>
                     {/* <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" color='#000' size='28px' /> */}
                     </button>  
                 </div>
