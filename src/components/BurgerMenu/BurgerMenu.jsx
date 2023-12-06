@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import {FaBars, FaTimes, FaInstagram, FaFacebook } from 'react-icons/fa';
+import css from './BurgerMenu.module.css';
+import { FaTimes, FaInstagram, FaFacebook } from 'react-icons/fa';
+import icons from '../../images/icons.svg';
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const BurgerMenu = ({ setScrollToId }) => {
@@ -16,20 +18,11 @@ const BurgerMenu = ({ setScrollToId }) => {
 
   return (
     <div>
-     <button onClick={toggleMenu} style={{
-        display: 'inline-flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '39px',
-        width: '39px',
-        borderRadius: '50%',
-        border: 'none',
-        backgroundColor: '#DCEFD8',
-        color: '#292D32',
-        fontSize: '24px',
-        cursor: 'pointer'
-      }}>
-        <FaBars />
+     <button className={css.burger_button} onClick={toggleMenu} >
+         <svg className={css.menu_icon}>
+        <use href={`${icons}#icon-menu`} />
+      </svg>
+       
       </button>
       {isOpen && (
         <div style={{

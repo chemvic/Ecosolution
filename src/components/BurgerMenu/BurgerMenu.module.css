@@ -1,0 +1,31 @@
+.menu_icon{
+    fill: #229922;
+    width: 16px;
+   height: 16px;
+   -webkit-transition-property: fill;
+   transition-property: fill;
+   -webkit-transition-duration: 250ms;
+           transition-duration: 250ms;
+   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger_button{  
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        height: 39px;
+        width: 39px;
+        border-radius: 50%;
+        border: none;
+        background-color: #DCEFD8;
+        color: #292D32;
+        font-size: 24px;
+        cursor: pointer
+}
+.burger_button:hover{
+    background-color: #97D28B;
+}
+.burger_button:hover .menu_icon{
+    fill: #292D32;
+}

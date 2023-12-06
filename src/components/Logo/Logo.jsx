@@ -1,13 +1,16 @@
 import css from './Logo.module.css';
+import icons from '../../images/icons.svg';
+
 const Logo = () => {
-  // const logoIcon = '../../images/icons.svg#icon-burger';
+
    return (
      <div >
-      {/* <a href="/"> */}
+     
+      <a href="/">
       <svg className={css.logo_icon}>
-        <use xlinkHref="../../images/icons.svg#icon-burger" />
+        <use href={`${icons}#icon-Group-logo`} />
       </svg>
-                  {/* </a> */}
+      </a>
      </div>
    );
  };

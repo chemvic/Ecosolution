@@ -21,6 +21,7 @@
   position: relative;
   margin: 0 auto;
   padding: 0 20px;
+  border: 1px dotted red;
 }
 
 @media only screen and (min-width: 360px) and (max-width: 480px) {
@@ -52,13 +53,15 @@
     top: 0;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     align-items: center;
     padding: 36px 0;
     z-index: 2;
     background-color: #fff;
 }
-
+.header_buttons{
+  display: flex;
+}
 .button{
   display: none;
   font-family: 'FiraSans';
@@ -73,6 +76,7 @@
   text-align: center;         
   border-radius: 20px;
   border: none;
+  margin-left: 12px;
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1) background-color
   250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -80,15 +84,13 @@
   background-color: #173D33; 
   color:#97D28B ;
 }
-@media (min-width: 768px) {
-   
-  
+
+@media (min-width: 768px) {  
   .button {
-      display: block;
-      
-    
+      display: block;    
     }
 }
+
 @media screen and (min-width: 1280px) {
     .header {
      padding: 24px 0;

@@ -6,8 +6,6 @@ import Values from 'components/Values/Values';
 import Electricity from 'components/Electricity/Electricity';
 import React, { useState } from 'react';
 import Cases from 'components/Cases/Cases';
-// import SliderCard from 'components/SliderCard/SliderCard';
-// import workerImage from './images/Lviv-region.jpg';
 
  const App = () => {
   const [scrollToId, setScrollToId] = useState(null);
@@ -16,10 +14,13 @@ import Cases from 'components/Cases/Cases';
      {/* <Header/> */}
      <div className={css.header}>
         <Logo/>
-        <BurgerMenu  setScrollToId={setScrollToId}/>
-        <button className={css.button} type='button' >
-        Get in touch
-      </button>
+        <div className={css.header_buttons}>
+           <BurgerMenu  setScrollToId={setScrollToId}/>
+            <button className={css.button} type='button' >
+                Get in touch
+            </button>
+        </div>
+       
       </div>
      <Hero/>
      <Values id='main' scrollToId={scrollToId}/>
