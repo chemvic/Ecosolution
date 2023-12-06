@@ -73,6 +73,9 @@
               .sliderCard__description{
                 font-size: 14px;               
               }  
+              .sliderCard__info::before {               
+                top: 129px;               
+              }
     }
     
     
@@ -85,7 +88,10 @@
               }
               .sliderCard__description{
                 font-size: 16px;               
-              }   
+              } 
+              .sliderCard__info::before {               
+                top: 130px;               
+              }  
           }
 
 

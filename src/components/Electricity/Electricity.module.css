@@ -33,7 +33,7 @@
     color: #173D33;
     text-align: center;
     margin-bottom: 24px;
-};
+}
 
 .energy {
     display: flex;
@@ -87,4 +87,7 @@
     .title{
         font-size: 48px;
      }
+     .electricity_text{
+      width: 491px;
+  }
     }

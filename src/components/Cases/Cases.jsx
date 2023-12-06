@@ -54,13 +54,17 @@ const Cases = () => {
 
   return (
     <section  className={css.section}>
-    <div>
+    <div className={css.cases_header} >
     <div className={css.cases_text}>    
       <h2 className={css.title}>Successful cases of<br/> our company</h2>       
     </div>
-        <p className={css.current_text}>{currentSlide + 1}/5</p>
 
-      <button style={{
+
+    <div  className={css.wrapper_handlers}>
+       <p className={css.current_pict}>{currentSlide + 1}<span className={css.quentity_pict}> /5</span></p>
+
+       <div className={css.wrapper_buttons}>
+       <button style={{
         backgroundColor: 'white',
         display: 'inline-flex',
         justifyContent: 'center',
@@ -82,6 +86,12 @@ const Cases = () => {
         backgroundColor: 'white',
         cursor: 'pointer'
       }} onClick={next}><CircumIcon name="circle_chev_right" color="#000" size="66px"/></button>
+
+       </div>      
+    </div>
+  </div>     
+
+
     <Slider {...settings}>
       <div>
         
@@ -106,7 +116,7 @@ const Cases = () => {
       </div>
       
     </Slider>
-    </div></section>
+    </section>
   );
 };
 
