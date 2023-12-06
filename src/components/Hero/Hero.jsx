@@ -40,8 +40,10 @@
               >office@ecosolution.com</a
             >
           </li>
-        </ul>
-         
+          <li className={css.contacts__item}>
+             <p className={css.contacts__trade}>ecosolution © 2023</p>
+          </li>
+        </ul>        
         </div>
 
        <div className={css.hero__overlay}>
