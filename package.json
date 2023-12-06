@@ -2,7 +2,7 @@
   "name": "ecosolution",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://chemvic.github.io/Ecosolution/ecosolution",
+  "homepage": "https://chemvic.github.io/Ecosolution",
   "dependencies": {
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
