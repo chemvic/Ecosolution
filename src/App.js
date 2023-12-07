@@ -6,6 +6,7 @@ import Values from 'components/Values/Values';
 import Electricity from 'components/Electricity/Electricity';
 import React, { useState } from 'react';
 import Cases from 'components/Cases/Cases';
+import Faq from 'components/Faq/Faq';
 
  const App = () => {
   const [scrollToId, setScrollToId] = useState(null);
@@ -25,7 +26,8 @@ import Cases from 'components/Cases/Cases';
      <Hero/>
      <Values id='main' scrollToId={scrollToId}/>
      <Electricity value ="1.134.147.814"/>
-     <Cases/>     
+     <Cases/>  
+     <Faq/>   
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import css from './Electricity.module.css';
 const Electricity = ({value}) => {
-    const formattedValue = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');   return (
+    const formattedValue = value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+    
+    return (
     <section className={css.section}>
         <div className={css.electro}>
            <div className={css.electricity_text}>    
