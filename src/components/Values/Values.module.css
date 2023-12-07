@@ -7,14 +7,7 @@
 }
 
 
-@media  screen and (min-width: 360px) and (max-width: 767px) {
-    .section {
-      padding:  18px 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-  }
+
 
   .values{
     display: flex;
@@ -25,12 +18,12 @@
   
 
   .values_title{
+    display: block;
     margin-bottom: 24px;
   }
-  .values_text{
-    margin-bottom: 36px;
-  }
+
   .wrapper{
+    display: block;
     width: 320px;
     height: 72px;
     margin-bottom: 36px;
@@ -49,6 +42,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px; 
+   
+  }
+  @media only screen and (min-width: 360px) and (max-width: 767px) {
+    .section {
+      padding:  18px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .grid_container {
+      margin-top: 36px;
+    }
+    
   }
 
   @media screen and (min-width: 768px) {
@@ -65,16 +71,16 @@
         grid-column: span 2;
 
       }
-
     .values_text{
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 100px;
+        /* flex-direction: row; */
+        justify-content: space-between;
+        /* width: 50%; */
     }
     .grid_container {
        gap: 24px; 
        grid-template-columns: repeat(3, 1fr);
+       margin-top: 100px;
     }
   }
   
@@ -85,9 +91,9 @@
      .image {
         width: 596px;
         height: 339px;
-      }
-      .values_text{
-        margin-bottom: 122px;
-      }
     }
+      .grid_container {
+        margin-top: 122px;
+    }
+  }
   
