@@ -4,6 +4,7 @@ import Card from 'components/Card/Card';
 import css from './Values.module.css';
 import workerImage from '../../images/man-worker-firld-by-solar-panels 1.jpg';
 import workersImage from '../../images/workers.jpg';
+
 const Values = ({id}) => {
     console.log('Received id:', id);
    return (

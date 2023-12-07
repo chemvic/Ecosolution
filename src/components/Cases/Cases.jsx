@@ -8,12 +8,8 @@ import rivneImage from '../../images/Rivne.jpg';
 import khersonImage from '../../images/Kherson.jpg';
 import zaporImage from '../../images/Zaporizhia.jpg';
 import css from './Cases.module.css';
-
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import CircumIcon from "@klarr-agency/circum-icons-react";
 import SliderCard from 'components/SliderCard/SliderCard';
-
+import icons from '../../images/icons.svg';
 
 const Cases = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -64,28 +60,16 @@ const Cases = () => {
        <p className={css.current_pict}>{currentSlide + 1}<span className={css.quentity_pict}> /5</span></p>
 
        <div className={css.wrapper_buttons}>
-       <button style={{
-        backgroundColor: 'white',
-        display: 'inline-flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '66px',
-        width: '66px',
-        borderRadius: '50%',
-        border: 'none',
-        cursor: 'pointer'
-      }} onClick={previous}><CircumIcon name="circle_chev_left" color="#000" size="66px" /></button>
-      <button style={{
-        display: 'inline-flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '66px',
-        width: '66px',
-        borderRadius: '50%',
-        border: 'none',
-        backgroundColor: 'white',
-        cursor: 'pointer'
-      }} onClick={next}><CircumIcon name="circle_chev_right" color="#000" size="66px"/></button>
+        <button className={css.button} onClick={previous}>
+          <svg className={css.icon}>
+              <use href={`${icons}#icon-arrow-left`} />
+          </svg>
+        </button>
+        <button className={css.button} onClick={next}>
+          <svg className={css.icon}>
+              <use href={`${icons}#icon-arrow-right`} />
+          </svg>
+        </button>
 
        </div>      
     </div>
