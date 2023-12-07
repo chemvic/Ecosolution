@@ -6,11 +6,11 @@ const Logo = () => {
    return (
      <div >
      
-      <a href="/">
+      {/* <a href=""> */}
       <svg className={css.logo_icon}>
         <use href={`${icons}#icon-Group-logo`} />
       </svg>
-      </a>
+      {/* </a> */}
      </div>
    );
  };
