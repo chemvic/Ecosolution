@@ -36,7 +36,9 @@
     margin: 16px 0;
 }
 .answer{
+    margin-left: 36px;
     margin-bottom: 16px;
+    
 }
 .question_text{
     font-family: 'FiraSans';
@@ -44,6 +46,7 @@
     font-style: normal;
     letter-spacing: -0.04em;
     color: #173D33;
+    text-align: justify;
 }
 .answer_text{
     font-family: 'FiraSans';
@@ -51,6 +54,8 @@
     font-style: normal;
     letter-spacing: -0.04em;
     color: #173D33;
+    text-align: justify;
+   
 }
 @media screen and (min-width: 1280px) {
     .question_text{

@@ -8,13 +8,13 @@
 
 
 
-
+/* 
   .values{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
 
   .values_title{
@@ -38,13 +38,7 @@
 .image {
     display: none;
   }
-.grid_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 24px; 
-    margin-top: 36px;
-   
-  }
+
   @media only screen and (min-width: 360px) and (max-width: 767px) {
     .section {
       padding:  18px 0;
@@ -53,8 +47,15 @@
       justify-content: center;
     }
     .grid_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px; 
+    margin-top: 36px;
+   
+  }
+    /* .grid_container {
       margin-top: 36px;
-    }
+    } */
     
   }
 
@@ -65,25 +66,40 @@
       flex-direction: column;
       justify-content: center;
     }
-     .image {
+     /* .image {
         width: 342px;
         height: 197px;
         display: block;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
         grid-column: span 2;
-
-      }
+      } */
     .values_text{
         display: flex;
         /* flex-direction: row; */
         justify-content: space-between;
         /* width: 50%; */
     }
-    .grid_container {
+    /* .grid_container {
        gap: 24px; 
        grid-template-columns: repeat(3, 1fr);
        margin-top: 100px;
+    } */
+    .grid_container {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
+        "card1 card2 image1"
+        "card3 card4 image2";
     }
+    .card:nth-child(1) { grid-area: card1; }
+    .card:nth-child(2) { grid-area: card2; }
+    .card:nth-child(3) { grid-area: card3; }
+    .card:nth-child(4) { grid-area: card4; }
+    .image:nth-child(1) { grid-area: image1; }
+    .image:nth-child(2) { grid-area: image2; }
   }
+  
   
   @media screen and (min-width: 1280px) {
     .section {
