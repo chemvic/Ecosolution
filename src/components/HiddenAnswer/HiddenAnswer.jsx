@@ -9,7 +9,7 @@ const HiddenAnswer = ({quest, asw, showText, showAnswer}) => {
          <div className={css.grid_container}>
               <button className={css.button} type='button' onClick={showAnswer}>
                 <svg className={css.button_icon}>
-                 <use href={`${icons}#${showText ? 'icon-add-converted' : 'icon-minus'}`}/>                 
+                 <use href={`${icons}#${showText ? 'icon-minus' : 'icon-Plus'}`}/>                 
                 </svg> 
               </button> 
             <div className={css.question}><p>{quest}</p></div>
