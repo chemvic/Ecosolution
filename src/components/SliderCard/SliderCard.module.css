@@ -95,8 +95,8 @@
           }
 .icon{
     fill: #173d33;
-     width: 48px;
-    height: 48px;
+     width: 28px;
+    height: 28px;
     -webkit-transition-property: fill;
     transition-property: fill;
     -webkit-transition-duration: 250ms;
@@ -117,7 +117,7 @@
         cursor: pointer
 }
 .button:hover{
-    background-color: #173D33;
+    background-color: #173d33;
 }
 .button:hover .icon{
     fill: #97D28B;

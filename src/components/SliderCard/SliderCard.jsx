@@ -16,7 +16,7 @@ const SliderCard = ({photo, alt, title, description, date}) => {
                     <h3 className={css.sliderCard__title}>{title}</h3>
                     <button  className={css.button} type='button' >
                       <svg className={css.icon}>
-                            <use href={`${icons}#icon-arrow-right`} />
+                            <use href={`${icons}#icon-arrow-right-up`} />
                       </svg>
                     </button>  
                 </div>
