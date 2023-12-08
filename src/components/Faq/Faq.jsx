@@ -1,16 +1,29 @@
+import React, { useState } from 'react';
+import HiddenAnswer from 'components/HiddenAnswer/HiddenAnswer';
 import css from './Faq.module.css';
-// import icons from '../../images/icons.svg';
+import {questions} from './questions';
 
 const Faq = () => {
+const [activeQuestion, setActiveQuestion]= useState(0);
+
 
    return (
     <section  className={css.section}>
          <div className={css.grid_container}>
-            <div className={css.title}><p>Lorem ir ssumenda, veritatis!</p>></div>
-            <div className={css.questions}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quae, optio cumque vero sapiente non, nam quis quidem commodi voluptatem asperiores. Corporis facilis beatae, excepturi tempore placeat nesciunt quidem pariatur exercitationem mollitia nam debitis voluptates esse? Voluptatum soluta quidem tempore.</p>></div>
+            <div className={css.title}><p>Frequently Asked<br/> Questions</p></div>
+            <div className={css.questions}>
+               {questions.map((question,index)=>(<HiddenAnswer
+                key={question.qwest}
+                quest={question.qwest}
+                asw={question.asw}
+                showText={index===activeQuestion} 
+                showAnswer={()=>setActiveQuestion(index)}               
+                />))} 
+              
+                </div>
             <div className={css.more_questions}>
                 <div className={css.more_wrapper}>
-                   <p>Lorem ir ssumenda, veritatis!</p>
+                   <p>Didn't find the answer to your question?</p>
                 <button className={css.button} type='button' >
                     Contact Us
                 </button> 

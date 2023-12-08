@@ -1,0 +1,17 @@
+.button{  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    /* color: #292D32;        */
+    cursor: pointer
+}
+.button_icon{
+    width: 28px;
+    height: 28px;
+    
+}
