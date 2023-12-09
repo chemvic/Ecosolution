@@ -11,7 +11,7 @@ const [activeQuestion, setActiveQuestion]= useState(0);
     <section  className={css.section}>
          <div className={css.grid_container}>            
             <div className={css.title}><p className={css.title_text}>Frequently Asked<br/> Questions</p></div>
-              <div className={css.questions}>
+            <div className={css.questions}>
                {questions.map((question, index)=>(<HiddenAnswer
                 key={question.qwest}
                 quest={question.qwest}
@@ -19,7 +19,7 @@ const [activeQuestion, setActiveQuestion]= useState(0);
                 showText={index===activeQuestion} 
                 showAnswer={()=>setActiveQuestion(index)}               
                 />))}               
-              </div>
+            </div>
             <div className={css.more_questions}>
               <div className={css.more_wrapper}>
                    <p className={css.more_text}>Didn't find the answer to your question?</p>

@@ -6,7 +6,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;   
+  width: 100%;   
 }
 
 .title{
@@ -20,13 +20,16 @@
 .title_wrapper{
   width: 320px;
 }
+.description_wrapper{
+  margin-bottom: 24px;
+}
 .description{
     font-family: 'FiraSans';
     font-size: 16px;
     font-style: normal;
     letter-spacing: -0.04em;
     color: #173D33;
-    text-align: justify;
+    text-align: justify;    
 }
 .contacts__link{
     font-family: 'FiraSans';
@@ -73,6 +76,7 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 36px;
+  width: 100%;
   text-align: center;
 }
 @media  screen and (min-width: 360px) and (max-width: 480px) {
@@ -105,6 +109,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .wrapper{
+    width: 480px;   
   }
   .hero__overlay {    
     width: 100%;

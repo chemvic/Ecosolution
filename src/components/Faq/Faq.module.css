@@ -90,10 +90,8 @@
   @media screen and (min-width: 768px) {
     .section {
      padding:  25px 0;
-      /* display: flex;
-      flex-direction: column;
-      justify-content: center; */
-    } .questions{
+    }
+    .questions{
         width: 342px;
     }
     .more_questions {

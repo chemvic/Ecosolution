@@ -11,9 +11,11 @@
         </div>
       
         <div className={css.wrapper}>
-          <p className={css.description}>Development and implementation of renewable non-pollutingF energy sources,
+          <div className={css.description_wrapper}>
+            <p className={css.description}>Development and implementation of renewable non-pollutingF energy sources,
              generating power generation using energy wind, sun, water, biomass
-          </p>
+            </p>
+          </div>          
           <Button text="Learn more"/> 
         </div>
        </div>
@@ -21,8 +23,7 @@
         
         
 
-        <div className={css.hero__contacts}>
-         
+        <div className={css.hero__contacts}>       
          
           <a
                     className={css.contacts__link}
