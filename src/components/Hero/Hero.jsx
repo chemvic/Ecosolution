@@ -22,6 +22,26 @@
         
 
         <div className={css.hero__contacts}>
+         
+         
+          <a
+                    className={css.contacts__link}
+                    href="https://maps.app.goo.gl/SZX7RGnyEbdFQhdW6"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</a
+                  >
+         
+            <a
+              lang="en" 
+              className={css.contacts__link}
+              href="mailto:office@ecosolution.com"              
+              >office@ecosolution.com</a
+            >
+        
+             <p className={css.contacts__trade}>ecosolution © 2023</p>             
+        </div>
+        {/* <div className={css.hero__contacts}>
           <ul className={css.contacts}>
           <li className={css.contacts__item}>
           <a
@@ -44,7 +64,7 @@
              <p className={css.contacts__trade}>ecosolution © 2023</p>
           </li>
         </ul>        
-        </div>
+        </div> */}
 
        <div className={css.hero__overlay}>
         </div>
