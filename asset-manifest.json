@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Ecosolution/static/css/main.7769ba54.css",
-    "main.js": "/Ecosolution/static/js/main.b48602da.js",
+    "main.css": "/Ecosolution/static/css/main.8dfd1c32.css",
+    "main.js": "/Ecosolution/static/js/main.d1d5b4b9.js",
     "static/media/wind-farms-fields 1.jpg": "/Ecosolution/static/media/wind-farms-fields 1.5bb0c2fe33af74386401.jpg",
     "static/media/FiraSans-Regular.ttf": "/Ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/FiraSans-Light.ttf": "/Ecosolution/static/media/FiraSans-Light.7ece67e11e181a7292ef.ttf",
@@ -18,11 +18,11 @@
     "static/media/slick.ttf": "/Ecosolution/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Ecosolution/index.html",
-    "main.7769ba54.css.map": "/Ecosolution/static/css/main.7769ba54.css.map",
-    "main.b48602da.js.map": "/Ecosolution/static/js/main.b48602da.js.map"
+    "main.8dfd1c32.css.map": "/Ecosolution/static/css/main.8dfd1c32.css.map",
+    "main.d1d5b4b9.js.map": "/Ecosolution/static/js/main.d1d5b4b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.7769ba54.css",
-    "static/js/main.b48602da.js"
+    "static/css/main.8dfd1c32.css",
+    "static/js/main.d1d5b4b9.js"
   ]
 }
