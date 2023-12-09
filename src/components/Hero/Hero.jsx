@@ -2,7 +2,7 @@
  import Button from '../Button/Button';
 
  const Hero = () => {
-    return (<>
+    return (
         <section  className={css.section}>
          
       <div className={css.hero_header} >
@@ -51,7 +51,7 @@
     
       
 
-        </section></>
+        </section>
     );
   };
   export default Hero;

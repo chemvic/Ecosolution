@@ -21,16 +21,16 @@ const Values = ({id}) => {
         </div>
      
       <div className={css.grid_container}>
-        <div className={css.card}><Card title='Openness' text='to the world, people, new ideas and projects'/></div>
-        <div className={css.card}><Card title='Responsibility' text='we are aware that the results of our work have an impact on our lives and the lives of future generations'/></div>
+        <div className={css.card}><Card title='Openness' text='to the world, people, new ideas and projects' icon='icon-maximize-circle'/></div>
+        <div className={css.card}><Card title='Responsibility' text='we are aware that the results of our work have an impact on our lives and the lives of future generations' icon='icon-global-edit'/></div>
         <div className={css.image}>
             <img  src={workersImage} alt="workers at wind turbines"/>
         </div>
         <div className={css.image}> 
             <img  src={workerImage} alt="worker at solar panels"/>
         </div>  
-        <div className={css.card}><Card title='Innovation' text='we use the latest technology to implement non-standard solutions'/></div>  
-        <div className={css.card}><Card title='Quality' text='we do not strive to be the first among others, but we want to be the best in our business'/></div>
+        <div className={css.card}><Card title='Innovation' text='we use the latest technology to implement non-standard solutions' icon='icon-cpu-charge'/></div>  
+        <div className={css.card}><Card title='Quality' text='we do not strive to be the first among others, but we want to be the best in our business' icon='icon-ranking'/></div>
 
       </div>
 

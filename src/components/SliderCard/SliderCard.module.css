@@ -41,14 +41,14 @@
     font-family: 'FiraSans';
     font-size: 18px;
     font-style: normal;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     color: #173D33;
   }
   .sliderCard__description{
     font-family: 'FiraSans';
     font-size: 12px;
     font-style: normal;
-    letter-spacing: -4%;
+    letter-spacing: -0.04em;
     color: #173D33;
   }
 
