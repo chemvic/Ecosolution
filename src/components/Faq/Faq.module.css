@@ -105,23 +105,7 @@
   }
 
 }
-@media screen and (min-width: 1280px) {
-    .section {
-     padding:  30px 0;
-    } .questions{
-        width: 596px;
-    }
-    .title_text{       
-        font-size: 48px;
-    }
-    .more_text{
-        font-size: 24px;
-    }
-    .grid_container {
-        gap: 185px; 
-    }
 
-}
 
   @media (min-width: 768px) {
     .grid_container {
@@ -148,3 +132,20 @@
       justify-content: flex-end;
     }
   }
+  @media screen and (min-width: 1280px) {
+    .section {
+     padding:  30px 0;
+    } .questions{
+        width: 596px;
+    }
+    .title_text{       
+        font-size: 48px;
+    }
+    .more_text{
+        font-size: 24px;
+    }
+    .grid_container {
+        gap: 185px; 
+    }
+
+}
