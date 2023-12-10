@@ -1,0 +1,108 @@
+
+.title{
+    font-family: 'Oswald';
+    font-size: 28px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #173D33;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.contacts_list{
+    width: 244px;
+}
+.icon{
+    fill: #173d33;
+    width: 24px;
+    height: 24px;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            margin-right: 8px;
+}
+
+.contacts_item{
+    margin-bottom: 24px;
+}
+
+.contacts__link:hover .icon{
+    fill: #97D28B;
+}
+.contacts_names{
+    font-family: 'FiraSans';
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    color: #173D33;
+   margin-bottom: 8px;
+}
+.contacts__link{
+    font-family: 'FiraSans';
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    color: #173D33;
+   /* margin-bottom: 12px; */
+}
+.contacts_socials{
+    display: flex;
+}
+.contacts_phone1{
+    margin-bottom: 12px;
+}
+@media only screen and (min-width: 360px) and (max-width: 480px) {
+    .section {
+      padding:  18px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+   
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .section {
+      padding:  18px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+   
+}
+
+  @media screen and (min-width: 768px) {
+    .section {
+     padding:  25px 0;
+    }
+    .title {
+        font-size: 36px;
+        margin-bottom: 40px;
+    }
+    .contactUs{
+        display: flex;
+        justify-content: space-between;
+    }
+   
+}
+    
+  @media screen and (min-width: 1280px) {
+    .section {
+     padding:  30px 0;
+    }
+    .title {
+        font-size: 48px;
+        margin-bottom: 120px;
+    }
+    .contacts_list{
+        width: 466px;
+    }
+    .contacts__link{
+        font-size: 24px;       
+    }
+    .contacts_names{
+        margin-bottom: 16px;
+    }
+
+}

@@ -7,12 +7,13 @@ import Electricity from 'components/Electricity/Electricity';
 import React, { useState } from 'react';
 import Cases from 'components/Cases/Cases';
 import Faq from 'components/Faq/Faq';
+import ContactUs from 'components/ContactUs/ContactUs';
 
  const App = () => {
   const [scrollToId, setScrollToId] = useState(null);
   return (
     <div className={css.container}>
-     {/* <Header/> */}
+ 
      <div className={css.header}>
         <Logo/>
         <div className={css.header_buttons}>
@@ -26,10 +27,10 @@ import Faq from 'components/Faq/Faq';
      <Hero/>
      <Values id='main' scrollToId={scrollToId}/>
      <Electricity value ="1.134.147.814"/>
-     <Cases/>  
-     <Faq/>   
+     <Cases/>
+      <Faq/> 
+       <ContactUs/>
     </div>
   );
 };
 export default App;
-
