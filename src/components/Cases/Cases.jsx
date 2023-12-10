@@ -67,7 +67,7 @@ const Cases = () => {
         </button>
         <button className={css.button} onClick={next}>
           <svg className={css.icon}>
-              <use href={`${icons}#icon-arrow-right`} />
+              <use href={`${icons}#icon-round-arrow-right`} />
           </svg>
         </button>
 
