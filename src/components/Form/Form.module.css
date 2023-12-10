@@ -23,7 +23,7 @@ label {
     border-bottom: 1px solid #97D28B;
     transition: border-bottom-color 0.3s ease;
   }
-.input::placeholder{
+.input::placeholder, .input_textarea::placeholder{
     font-family: 'FiraSans';
     font-size: 18px;
     font-style: normal;
