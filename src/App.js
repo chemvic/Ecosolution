@@ -9,6 +9,7 @@ import Cases from 'components/Cases/Cases';
 import Faq from 'components/Faq/Faq';
 import ContactUs from 'components/ContactUs/ContactUs';
 import Header from 'components/Header/Header';
+import Footer from 'components/Footer/Footer';
 
  const App = () => {
   // const [scrollToId, setScrollToId] = useState(null);
@@ -31,14 +32,15 @@ import Header from 'components/Header/Header';
         </div>
        
       </div> */}
-     <Header/>
-     <Hero/>
-     <Values/>
-     {/* <Values id='main' scrollToId={scrollToId}/> */}
-     <Electricity value ="1.134.147.814"/>
-     <Cases/>
-      <Faq/> 
-       <ContactUs/>
+    <Header/>
+    <Hero/>
+    <Values/>
+    {/* <Values id='main' scrollToId={scrollToId}/> */}
+    <Electricity value ="1.134.147.814"/>
+    <Cases/>
+    <Faq/> 
+    <ContactUs/>
+    <Footer/>
     </div>
   );
 };

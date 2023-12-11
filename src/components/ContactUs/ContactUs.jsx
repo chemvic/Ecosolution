@@ -82,7 +82,7 @@ const ContactUs = () => {
                         </div>
                     </li>
                     <li className={css.contacts_item}>
-                    <div>
+                        <div>
                             <h3 className={css.contacts_names}>Social Networks:</h3>
                             <div className={css.contacts_socials}>
                             <div>
