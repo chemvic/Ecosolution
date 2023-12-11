@@ -67,11 +67,22 @@
 
 
 .flex_container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;   
   }
+.flex_container::before{
+    position: absolute;
+    content: '';
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #97D28B;   
+  }
+
   .flex_button{
     display: flex;
     justify-content: flex-end;
@@ -138,6 +149,9 @@
         width: 50%;
         left: 50%;
         margin-left: -50%;
+      }
+      .flex_container::before{    
+        top: -20px;
       }
  
 }
