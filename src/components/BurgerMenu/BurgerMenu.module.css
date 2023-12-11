@@ -29,3 +29,101 @@
 .burger_button:hover .menu_icon{
     fill: #292D32;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 61, 51, 0.25);
+    z-index: 1;
+  }
+  
+.modal{
+  position: fixed;
+  width: 320px;
+  height: 701px;
+  border-radius: 25px;
+  padding: 24px; 
+  background-color: rgba(23,61,51,0.75);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items: flex-start;
+  z-index: 2;
+ 
+}
+.modal::after{
+    position: absolute;
+    content: '';   
+    top: 56px;
+    left: 24px;
+    right: 24px;
+    height: 1px;
+    background-color: #fff; 
+}
+.modal_wrapper{
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    
+}
+.modal_social{
+   margin-top: 400px; 
+}
+.modal_item{
+    margin-bottom: 8px;
+}
+.modal_link{
+    font-family: 'FiraSans';
+    font-size: 24px;
+    font-style: normal;
+    letter-spacing: -0.04em;
+    color: #fff;
+}
+@media  screen and (min-width: 360px) and (max-width: 480px) {
+   .modal{
+    width: 320px;
+    top: 36px;
+    left: 20px;
+    right: 20px;
+
+   }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 767px) {
+    .modal{
+        width: 320px;
+        top: 36px;       
+        right: 20px;
+    
+       }
+   }
+  
+  @media screen and (min-width: 768px) {
+    .modal{
+        width: 320px;
+        right: 30px;
+    
+       }
+    
+  
+    }
+  
+  
+  @media screen and (min-width: 1280px) {
+    .modal{
+        width: 365px;
+        height: 873px;
+        top: 24px;
+       
+        right: 100px;
+    
+       }
+       .modal_social{
+        margin-top: 530px;;  
+     }
+    
+  }

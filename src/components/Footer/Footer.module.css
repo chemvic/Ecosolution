@@ -22,6 +22,8 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button{  
+        position: relative;
+        z-index: 2;
         display: inline-flex;
         justify-content: center;
         align-items: center;
