@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import HiddenAnswer from 'components/HiddenAnswer/HiddenAnswer';
 import css from './Faq.module.css';
+import icons from '../../images/icons.svg';
 import {questions} from './questions';
 
 const Faq = () => {
@@ -25,6 +26,11 @@ const [activeQuestion, setActiveQuestion]= useState(0);
                    <p className={css.more_text}>Didn't find the answer to your question?</p>
                  <button className={css.button} type='button' >
                     Contact Us
+                    <div className={css.icon_wrapper}>
+                        <svg className={css.icon}>
+                           <use href={`${icons}#icon-arrow-down`} />
+                        </svg>
+                     </div>
                  </button> 
               </div>
                 
