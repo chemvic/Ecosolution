@@ -8,9 +8,11 @@ const schema = Yup.object().shape({
     fullName: Yup.string('Wrong Fullname')
       .min(2, 'Wrong Fullname')
       .max(50, 'Wrong Fullname')
-      .required('Required'),
+      .required('Required').matches(/^[а-яА-Яa-zA-Z\s]*$/, 'Wrong Fullname')
+      .test('two-words', 'Wrong Fullname', (value) => {
+        return value.split(' ').length >= 2;}),
     email: Yup.string().email('Wrong Email').required('Required'),
-    phone: Yup.number().required('Required').positive('Wrong Email').integer('Wrong Email'),
+    phone: Yup.number().required('Required').positive('Wrong Phone').integer('Wrong Phone').test('len', 'Wrong Phone', val => val.toString().length >= 11),
     message: Yup.string()   
   });
 
