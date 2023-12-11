@@ -37,7 +37,7 @@
     font-style: normal;
     letter-spacing: -0.04em;
     color: #173D33;
-   margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 .contacts__link{
     font-family: 'FiraSans';
@@ -46,7 +46,7 @@
     letter-spacing: -0.04em;
     color: #173D33;
     display: flex; 
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .contacts_socials{
@@ -62,10 +62,10 @@
       flex-direction: column;
       justify-content: center;
     }
-    .contactUs{
+    /* .contactUs{
         display: flex;
         
-    }
+    } */
    
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
