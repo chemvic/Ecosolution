@@ -34,7 +34,7 @@ const BurgerMenu = ({ setScrollToId }) => {
               <li  className={css.modal_item}><Link className={css.modal_link} onClick={() => scrollToSection('about')}>About  <FaArrowRight style={{ margin: '5px' }}/></Link></li>
               <li  className={css.modal_item}><Link className={css.modal_link} onClick={() => scrollToSection('cases')}>Cases  <FaArrowRight style={{ margin: '5px' }}/></Link></li>
               <li  className={css.modal_item}><Link className={css.modal_link} onClick={() => scrollToSection('faq')}>FAQ  <FaArrowRight style={{ margin: '5px' }}/></Link></li>
-              <li  className={css.modal_item}><Link className={css.modal_link} onClick={() => scrollToSection('contacts')}>Contacts  <FaArrowRight style={{ margin: '5px' }}/></Link></li>
+              <li  className={css.modal_item}><Link className={css.modal_link} onClick={() => scrollToSection('contacts')}>Contact Us  <FaArrowRight style={{ margin: '5px' }}/></Link></li>
             </ul>
           </nav>
           <div className={css.modal_social}>

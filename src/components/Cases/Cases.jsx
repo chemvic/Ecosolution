@@ -52,7 +52,7 @@ const Cases = () => {
     <section  className={css.section}>
     <div className={css.cases_header} >
     <div className={css.cases_text}>    
-      <h2 className={css.title}>Successful cases of<br/> our company</h2>       
+      <h2 className={css.title}>Successful cases of our company</h2>       
     </div>
 
 

@@ -46,9 +46,7 @@
           color: #292D32;       
           cursor: pointer
   }
-  /* .button:hover{
-      background-color: #173D33;
-  } */
+ 
   .button:hover .icon{
       fill: #97D28B;
   }
@@ -65,6 +63,9 @@
     .title{
         font-size: 28px;
      }
+     .cases_text{
+     width: 236px;
+    }
      .wrapper_handlers{
       display: flex;
       justify-content: space-between;
@@ -86,7 +87,6 @@
         font-size: 36px;
      }
      .cases_header{
-      position:relative;
       display: flex;
       justify-content: space-between;
      }
@@ -94,22 +94,26 @@
       display: flex;
       justify-content: space-between;
       align-items: baseline ;
+      width: 344px;
       margin-bottom: 19px;
      }
      .wrapper_buttons{
       margin-left: 126px;
     }
-    .cases_header::after {
+    .cases_text{
+      width: 300px;
+      position: relative;
+    }
+    .cases_text::after {
       content: "";
       position: absolute;
-      left: 384px;     
+      right: -90px;     
       width: 1px;
-      height: 65px;
+      top: 0;
+      bottom: 19px;
       background-color: #97D28B;
     }
-     /* .cases_text{
-        width: 264px;
-     } */
+     
   }
   
   @media screen and (min-width: 1280px) {
@@ -119,15 +123,22 @@
     .title{
         font-size: 48px;
      }
+     .cases_text{
+      width: 357px;
+   } 
+     .wrapper_handlers{
+      width: 459px;
+     }
      .wrapper_buttons{
       margin-left: 193px;
     }
-    .cases_header::after {
+    .cases_text::after {
       content: "";
       position: absolute;
-      left: 610px;        
+      right: -287px;        
       width: 1px;
-      height: 96px;
+      top: 0;
+      bottom: 24px;     
       background-color: #97D28B;
     }
     .icon{      
