@@ -1,16 +1,11 @@
 import { Link} from 'react-scroll';
- import Logo from '../Logo/Logo';
- import BurgerMenu from '../BurgerMenu/BurgerMenu';
- import css from './Header.module.css';
- import icons from '../../images/icons.svg';
+import css from './Button1.module.css';
+import icons from '../../images/icons.svg';
 
- const Header = () => {
-    return (
-      <div className={css.header}>
-        <Logo/>
-        <div className={css.header_buttons}>
-           <BurgerMenu/>
-           <Link
+const Button1 = ({text}) => {
+   return (
+     <div >
+       <Link
                       className={css.button}
                       as='button'
                       type='button'
@@ -25,9 +20,7 @@ import { Link} from 'react-scroll';
                   </svg>
                 </div>
                     </Link>
-        </div>
-       
-      </div>
-    );
-  };
-  export default Header;
+     </div>
+   );
+ };
+ export default Button1;

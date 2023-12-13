@@ -1,21 +1,30 @@
+import { Link} from 'react-scroll';
 import Logo from '../Logo/Logo';
 import css from './Footer.module.css';
 import icons from '../../images/icons.svg';
 
 const Footer = () => {
    return (
-     <div className={css.section}>
+     <section className={css.section}>
        
        <div className={css.flex_container}>
         <div className={css.flex_logo}>
           <Logo/>  
         </div>
         <div className={css.flex_button}>
-           <button className={css.button} type='button' >             
-                 <svg className={css.button_icon}>
-                   <use href={`${icons}#icon-arrow-up2`} />
-                 </svg>            
-           </button> 
+        <Link
+                      className={css.button}
+                      as='button'
+                      type='button'
+                      to="main"                     
+                      smooth={true}
+                      duration={500}
+                    ><div className={css.icon_wrapper}>
+                  <svg className={css.button_icon}>
+                    <use href={`${icons}#icon-arrow-up2`} />
+                  </svg>
+                </div>
+                    </Link>           
         </div>
         <div className={css.flex_socials}>
                             <div className={css.contacts_socials}>
@@ -61,7 +70,7 @@ const Footer = () => {
             <p className={css.contacts__link}>ecosolution © 2023</p>             
        </div>
       
-     </div>
+     </section>
    );
  };
  export default Footer;

@@ -11,7 +11,7 @@ import css from './Cases.module.css';
 import SliderCard from 'components/SliderCard/SliderCard';
 import icons from '../../images/icons.svg';
 
-const Cases = () => {
+const Cases = ({id}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
   const [slidesToShow, setSlidesToShow] = useState(1);
@@ -49,10 +49,10 @@ const Cases = () => {
   }
 
   return (
-    <section  className={css.section}>
+    <section id={id} className={css.section}>
     <div className={css.cases_header} >
     <div className={css.cases_text}>    
-      <h2 className={css.title}>Successful cases of our company</h2>       
+      <h2  className={css.title}>Successful cases of our company</h2>       
     </div>
 
 

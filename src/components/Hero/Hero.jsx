@@ -1,9 +1,9 @@
  import css from './Hero.module.css';
  import Button from '../Button/Button';
 
- const Hero = () => {
+ const Hero = ({id}) => {
     return (
-        <section  className={css.section}>
+        <section id={id} className={css.section}>
          
       <div className={css.hero_header} >
         <div className={css.title_wrapper}>

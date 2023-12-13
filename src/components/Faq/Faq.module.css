@@ -47,11 +47,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12.5px 12.5px 12.5px 16px;   
+    padding: 0 16px;   
     font-family: 'FiraSans';
     font-size: 16px;
     font-style: normal;
-    width: 130px;
+    width: 106px;
     height: 39px;
     color:#173D33;
     background-color: #97D28B;

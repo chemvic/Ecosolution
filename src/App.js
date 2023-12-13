@@ -15,31 +15,13 @@ import Footer from 'components/Footer/Footer';
   // const [scrollToId, setScrollToId] = useState(null);
   return (
     <div className={css.container}>
-
- 
-     {/* <div className={css.header}>
-        <Logo/>
-        <div className={css.header_buttons}>
-           <BurgerMenu  setScrollToId={setScrollToId}/>
-            <button className={css.button} type='button' >
-                Get in touch
-                <div className={css.icon_wrapper}>
-                <svg className={css.icon}>
-                  <use href={`${icons}#icon-arrow-right`} />
-                </svg>
-           </div>
-            </button>
-        </div>
-       
-      </div> */}
     <Header/>
-    <Hero/>
-    <Values/>
-    {/* <Values id='main' scrollToId={scrollToId}/> */}
+    <Hero id="main"/>
+    <Values id="about"/>
     <Electricity value ="1.134.147.814"/>
-    <Cases/>
-    <Faq/> 
-    <ContactUs/>
+    <Cases  id="cases"/>
+    <Faq id="faq"/> 
+    <ContactUs id="contacts"/>
     <Footer/>
     </div>
   );

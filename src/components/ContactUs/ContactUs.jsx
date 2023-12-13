@@ -4,9 +4,10 @@ import icons from '../../images/icons.svg';
 import MessageForm from 'components/Form/Form';
 
 
-const ContactUs = () => {
+const ContactUs = ({id}) => {
    return (
-     <div className={css.section}>
+    <section id={id} className={css.section}>
+
                          
             <h2 className={css.title}>Contact us</h2>
 
@@ -113,7 +114,7 @@ const ContactUs = () => {
 
      
          </div>
-       </div>
+       </section>
        
 
  
