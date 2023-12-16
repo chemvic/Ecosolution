@@ -45,6 +45,7 @@ const BurgerMenu = () => {
                     <Link
                       className={css.modal_link}
                       to="about"
+                      offset={-100}
                       onClick={closeMenu}
                       smooth={true}
                       duration={500}
@@ -56,6 +57,7 @@ const BurgerMenu = () => {
                     <Link
                       className={css.modal_link}
                       to="cases"
+                      offset={-100}
                       onClick={closeMenu}
                       smooth={true}
                       duration={500}
@@ -67,6 +69,7 @@ const BurgerMenu = () => {
                     <Link
                       className={css.modal_link}
                       to="faq"
+                      offset={-100}
                       onClick={closeMenu}
                       smooth={true}
                       duration={500}
@@ -78,6 +81,7 @@ const BurgerMenu = () => {
                     <Link
                       className={css.modal_link}
                       to="contacts"
+                      offset={-100}
                       onClick={closeMenu}
                       smooth={true}
                       duration={500}

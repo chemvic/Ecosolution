@@ -2,11 +2,10 @@
 
 import Card from 'components/Card/Card';
 import css from './Values.module.css';
-import workerImage from '../../images/man-worker-firld-by-solar-panels 1.jpg';
-import workersImage from '../../images/workers.jpg';
+import workerImage from '../../images/wind-farms-fields 1.jpg';
+import workersImage from '../../images/wind-farms-fields 1.jpg';
 
-const Values = ({id}) => {
-    console.log('Received id:', id);
+const Values = ({id}) => {  
    return (
     <section id={id} className={css.section}>
         <div  className={css.values}>

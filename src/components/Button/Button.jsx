@@ -9,7 +9,8 @@ const Button = ({text}) => {
                       className={css.button}
                       as='button'
                       type='button'
-                      to="cases"                     
+                      to="cases" 
+                      offset={-100}                    
                       smooth={true}
                       duration={500}
                     >

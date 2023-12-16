@@ -14,7 +14,8 @@ import { Link} from 'react-scroll';
                       className={css.button}
                       as='button'
                       type='button'
-                      to="contacts"                     
+                      to="contacts"
+                      offset={-100}                     
                       smooth={true}
                       duration={500}
                     >
