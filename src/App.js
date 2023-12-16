@@ -1,5 +1,5 @@
-import Hero  from 'components/Hero/Hero';
 import css from './App.module.css';
+import Hero  from 'components/Hero/Hero';
 import Values from 'components/Values/Values';
 import Electricity from 'components/Electricity/Electricity';
 import Cases from 'components/Cases/Cases';
