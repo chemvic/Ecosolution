@@ -6,7 +6,7 @@ const HiddenAnswer = ({quest, asw, showText, showAnswer}) => {
 
    return (
     
-        <div className={css.grid_container}>
+        <div className={css.question_container}>
 
             <div className={css.question_wrapper}>
               <div className={css.question}><p className={css.question_text}>{quest}</p></div>

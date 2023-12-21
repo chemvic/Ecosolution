@@ -1,3 +1,6 @@
+.question_container{
+    box-sizing: border-box;
+}
 .button{  
     display: inline-flex;
     justify-content: center;
@@ -57,7 +60,7 @@
     text-align: justify;
    
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
     .question_text{
         font-size: 24px;
     }

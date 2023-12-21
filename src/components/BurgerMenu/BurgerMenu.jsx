@@ -25,7 +25,7 @@ const BurgerMenu = () => {
       {isOpen && (
         <>
           <div className={css.overlay} onClick={closeMenu}></div>
-          <div className={css.modal}>
+          <div className={`${css.modal} ${isOpen ?css.open: ''}`}>
             <FaTimes onClick={toggleMenu} style={{ alignSelf: 'flex-start' }} />
             <div className={css.modal_wrapper}>
               <nav>

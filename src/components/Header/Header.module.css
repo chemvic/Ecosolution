@@ -1,10 +1,11 @@
 .header{  
+  box-sizing: border-box;
   position: fixed;
   top: 0;   
   display: flex;
   justify-content:space-between;
   align-items: center;
-  padding: 24px 0;
+  padding: 36px 0;
   z-index: 2;
   background-color: #fff;
   -webkit-transition-property: background-color;
@@ -12,17 +13,11 @@
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .header.scrolled{
-  position: fixed;
-  top: 0;   
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  padding: 24px 0;
-  z-index: 2;
   background-color: #F8FAFF;
- }
+}
 .header_buttons{
 display: flex;
 }
@@ -95,14 +90,14 @@ transition-property:background-color;
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
   .header{  
-    width: 480px;    
+    width: 440px;    
   }
 }
 
 @media screen and (min-width: 768px) {
 
   .header{  
-    width: 768px;    
+    width: 708px;    
   }
   .button {
     display: flex;
@@ -111,10 +106,13 @@ transition-property:background-color;
   } 
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
 
   .header{  
-    width: 1280px;
+    width: 1240px;
     padding: 24px 0;   
-  }  
+  }
+  .header.scrolled{
+    padding: 24px 0;
+  } 
 }
