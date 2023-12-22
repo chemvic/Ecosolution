@@ -4,7 +4,6 @@
     text-transform: uppercase;
     color: #173D33;
     text-align: left;
-    margin-bottom: 24px;
    }
    .current_pict{
       font-family: 'FiraSans';
@@ -12,7 +11,8 @@
       font-style: normal;
       font-weight: 300;
       letter-spacing: -0.04em;
-      color: #173D33;     
+      color: #173D33; 
+      align-self: flex-end;    
     }
     .quentity_pict{
       font-family: 'FiraSans';
@@ -63,14 +63,18 @@
     .title{
         font-size: 28px;
      }
+    .cases_header{
+      margin-bottom: 19px;
+    }
+
      .cases_text{
      width: 236px;
+     margin-bottom: 24px;
     }
      .wrapper_handlers{
       display: flex;
       justify-content: space-between;
-      align-items: baseline ;
-      margin-bottom: 19px;
+      align-items: center;
      }
     
   }
@@ -87,33 +91,34 @@
         font-size: 36px;
      }
      .cases_header{
+      position: relative;
       display: flex;
+      align-items: center;
       justify-content: space-between;
+      margin-bottom: 32px;      
      }
      .wrapper_handlers{
       display: flex;
       justify-content: space-between;
-      align-items: baseline ;
+      align-items:center ;
       width: 344px;
-      margin-bottom: 19px;
      }
      .wrapper_buttons{
       margin-left: 126px;
     }
     .cases_text{
       width: 300px;
-      position: relative;
     }
-    .cases_text::after {
+    .cases_header::after {
       content: "";
       position: absolute;
-      right: -90px;     
+      height: 65px;
+      left: 50%;
       width: 1px;
-      top: 0;
-      bottom: 19px;
+      top: 9px;
+      bottom: 9px;
       background-color: #97D28B;
     }
-     
   }
   
   @media screen and (min-width: 1440px) {
@@ -122,7 +127,10 @@
     }
     .title{
         font-size: 48px;
-     }
+    }
+    .cases_header{
+      margin-bottom: 109px;
+    }
      .cases_text{
       width: 357px;
    } 
@@ -132,13 +140,14 @@
      .wrapper_buttons{
       margin-left: 193px;
     }
-    .cases_text::after {
+    .cases_header::after {
       content: "";
       position: absolute;
-      right: -287px;        
+      height: 96px;
+      left: 50%;
       width: 1px;
-      top: 0;
-      bottom: 24px;     
+      top: 6px;
+      bottom: 6px;
       background-color: #97D28B;
     }
     .icon{      
