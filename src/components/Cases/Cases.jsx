@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect  } from 'react';
+import React, { useState, useRef  } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -14,26 +14,45 @@ import icons from '../../images/icons.svg';
 const Cases = ({id}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
-  const [slidesToShow, setSlidesToShow] = useState(1);
+  // const [slidesToShow, setSlidesToShow] = useState(1);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setSlidesToShow(window.innerWidth > 767 ? 2 : 1);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setSlidesToShow(window.innerWidth > 767 ? 2 : 1);
+  //   };
 
-    window.addEventListener('resize', handleResize);
-    handleResize();
+  //   window.addEventListener('resize', handleResize);
+  //   handleResize();
 
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  //   return () => window.removeEventListener('resize', handleResize);
+  // }, []);
 
   const settings = {
+    lazyLoad: true,
     infinite: true,
     speed: 500,
-    slidesToShow: slidesToShow,
+    slidesToShow: 2,
     slidesToScroll: 1,
+    initialSlide: 1,
     swipeToSlide: true,
-    beforeChange: (current, next) => setCurrentSlide(next)
+    beforeChange: (current, next) => setCurrentSlide(next),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }      
+    ]
   };
 
   const next = () => {
@@ -77,7 +96,7 @@ const Cases = ({id}) => {
 
 
     <Slider {...settings}>
-      <div>
+      <div className={css.slider_wrapper}>
         
       <SliderCard photo={lvivImage} alt={'Lviv'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
      description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
