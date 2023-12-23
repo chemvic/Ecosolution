@@ -50,7 +50,10 @@
   .button:hover .icon{
       fill: #97D28B;
   }
- 
+ .slider{
+  width: 100%;
+  gap: 48px;
+ }
   
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {

@@ -14,18 +14,6 @@ import icons from '../../images/icons.svg';
 const Cases = ({id}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
-  // const [slidesToShow, setSlidesToShow] = useState(1);
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setSlidesToShow(window.innerWidth > 767 ? 2 : 1);
-  //   };
-
-  //   window.addEventListener('resize', handleResize);
-  //   handleResize();
-
-  //   return () => window.removeEventListener('resize', handleResize);
-  // }, []);
 
   const settings = {
     lazyLoad: true,
@@ -95,7 +83,7 @@ const Cases = ({id}) => {
   </div>     
 
 
-    <Slider {...settings}>
+    <Slider {...settings} className={css.slider}>
       <div className={css.slider_wrapper}>
         
       <SliderCard photo={lvivImage} alt={'Lviv'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
