@@ -1,4 +1,4 @@
-import React, { useState, useRef  } from 'react';
+import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -11,9 +11,35 @@ import css from './Cases.module.css';
 import SliderCard from 'components/SliderCard/SliderCard';
 import icons from '../../images/icons.svg';
 
+function SampleNextArrow(props) {
+  const { onClick } = props;
+  return (
+    <div className={css.next_button}>   
+      <button className={css.button} onClick={onClick}>
+          <svg className={css.icon}>
+              <use href={`${icons}#icon-round-arrow-right`} />
+          </svg>
+        </button>
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { onClick } = props;
+  return (
+    <div className={css.prev_button}>    
+      <button className={css.button} onClick={onClick}>
+          <svg className={css.icon}>
+              <use href={`${icons}#icon-arrow-left`} />
+          </svg>
+        </button>
+    </div>
+  );
+}
+
+
 const Cases = ({id}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderRef = useRef(null);
 
   const settings = {
     lazyLoad: true,
@@ -21,6 +47,8 @@ const Cases = ({id}) => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     initialSlide: 1,
     swipeToSlide: true,
     beforeChange: (current, next) => setCurrentSlide(next),
@@ -43,18 +71,6 @@ const Cases = ({id}) => {
     ]
   };
 
-  const next = () => {
-    if (sliderRef.current) {
-        sliderRef.current.slickNext();
-      }
-  }
-
-  const previous = () => {
-    if (sliderRef.current) {
-        sliderRef.current.slickPrev();
-      }
-  }
-
   return (
     <section id={id} className={css.section}>
     <div className={css.cases_header} >
@@ -67,16 +83,17 @@ const Cases = ({id}) => {
        <p className={css.current_pict}>{currentSlide + 1}<span className={css.quentity_pict}> /5</span></p>
 
        <div className={css.wrapper_buttons}>
-        <button className={css.button} onClick={previous}>
+        {/* <button className={css.button} >
           <svg className={css.icon}>
               <use href={`${icons}#icon-arrow-left`} />
           </svg>
-        </button>
-        <button className={css.button} onClick={next}>
+        </button> */}
+        {/* <SamplePrevArrow /> */}
+        {/* <button className={css.button} >
           <svg className={css.icon}>
               <use href={`${icons}#icon-round-arrow-right`} />
           </svg>
-        </button>
+        </button> */}
 
        </div>      
     </div>

@@ -4,13 +4,12 @@ import icons from '../../images/icons.svg';
 const Logo = () => {
 
    return (
-     <div >
-     
-      {/* <a href="#"> */}
+     <div >     
+      <a href="/">
       <svg className={css.logo_icon}>
         <use href={`${icons}#icon-Group-logo`} />
       </svg>
-      {/* </a> */}
+      </a>
      </div>
    );
  };

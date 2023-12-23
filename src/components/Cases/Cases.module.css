@@ -50,10 +50,10 @@
   .button:hover .icon{
       fill: #97D28B;
   }
- .slider{
+ /* .slider{
   width: 100%;
   gap: 48px;
- }
+ } */
   
 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
@@ -64,7 +64,7 @@
       justify-content: center;
     }
     .title{
-        font-size: 28px;
+        font-size: 28px;       
      }
     .cases_header{
       margin-bottom: 19px;
@@ -72,16 +72,26 @@
 
      .cases_text{
      width: 236px;
-     margin-bottom: 24px;
+     margin-bottom: 63px;
+    }
+    .prev_button{
+      position: absolute;
+      top: -92px;
+      right: 66px;
+    }
+    .next_button{
+      position: absolute;
+      top: -92px;
+      right: 0;
     }
      .wrapper_handlers{
       display: flex;
       justify-content: space-between;
       align-items: center;
      }
-     .slider_wrapper{
+     /* .slider_wrapper{
       margin: 0 auto;
-     }
+     } */
     
   }
 
@@ -125,11 +135,21 @@
       bottom: 9px;
       background-color: #97D28B;
     }
-    .slider_wrapper{
+    .prev_button{
+      position: absolute;
+      top: -105px;
+      right: 66px;
+    }
+    .next_button{
+      position: absolute;
+      top: -105px;
+      right: 0;
+    }
+    /* .slider_wrapper{
       display: flex;
       justify-content: space-between;
-    gap: 24px;
-    }
+      gap: 24px;
+    } */
   }
   
   @media screen and (min-width: 1440px) {
@@ -160,6 +180,14 @@
       top: 6px;
       bottom: 6px;
       background-color: #97D28B;
+    }
+    .prev_button{
+      top: -201px;
+      right: 108px;
+    }
+    .next_button{
+      top: -201px;
+      right: 0;
     }
     .icon{      
       width: 84px;
