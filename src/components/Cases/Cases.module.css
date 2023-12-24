@@ -77,12 +77,12 @@
     .prev_button{
       position: absolute;
       top: -92px;
-      right: 66px;
+      left: 196px;
     }
     .next_button{
       position: absolute;
       top: -92px;
-      right: 0;
+      left: 260px;
     }
      .wrapper_handlers{
       display: flex;
