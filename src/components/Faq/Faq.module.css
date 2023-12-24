@@ -174,7 +174,8 @@
   @media screen and (min-width: 1440px) {
     .section {
      padding:  30px 0;
-    } .questions{
+    }
+     .questions{
         width: 596px;
     }
     .title_text{       

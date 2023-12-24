@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { FaTimes, FaInstagram, FaFacebook, FaArrowRight } from 'react-icons/fa';
-import { Link} from 'react-scroll';
 import css from './BurgerMenu.module.css';
 import icons from '../../images/icons.svg';
+import BurgerLink from 'components/BurgerLink/BurgerLink';
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,75 +25,50 @@ const BurgerMenu = () => {
         <>
           <div className={css.overlay} onClick={closeMenu}></div>
           <div className={`${css.modal} ${isOpen ?css.open: ''}`}>
-            <FaTimes onClick={toggleMenu} style={{ alignSelf: 'flex-start' }} />
-            <div className={css.modal_wrapper}>
+          <button className={css.close_button} onClick={toggleMenu}>
+            <svg className={css.close_icon}>
+              <use href={`${icons}#icon-close`} />
+            </svg> close
+          </button>            
+          <div className={css.modal_wrapper}>
               <nav>
                 <ul className={css.modal_list}>
                   <li className={css.modal_item}>
-                    <Link
-                      className={css.modal_link}
-                      to="main"
-                      onClick={closeMenu}
-                      smooth={true}
-                      duration={500}
-                    >
-                      Main <FaArrowRight style={{ margin: '5px' }} />
-                    </Link>
+                  <BurgerLink text='Main' closeMenu={closeMenu} link='main'/>
                   </li>
                   <li className={css.modal_item}>
-                    <Link
-                      className={css.modal_link}
-                      to="about"
-                      offset={-100}
-                      onClick={closeMenu}
-                      smooth={true}
-                      duration={500}
-                    >
-                      About <FaArrowRight style={{ margin: '5px' }} />
-                    </Link>
+                  <BurgerLink text='About' closeMenu={closeMenu} link='about'/>
                   </li>
                   <li className={css.modal_item}>
-                    <Link
-                      className={css.modal_link}
-                      to="cases"
-                      offset={-100}
-                      onClick={closeMenu}
-                      smooth={true}
-                      duration={500}
-                    >
-                      Cases <FaArrowRight style={{ margin: '5px' }} />
-                    </Link>
+                  <BurgerLink text='Cases' closeMenu={closeMenu} link='cases'/>
                   </li>
                   <li className={css.modal_item}>
-                    <Link
-                      className={css.modal_link}
-                      to="faq"
-                      offset={-100}
-                      onClick={closeMenu}
-                      smooth={true}
-                      duration={500}
-                    >
-                      FAQ <FaArrowRight style={{ margin: '5px' }} />
-                    </Link>
+                  <BurgerLink text='FAQ' closeMenu={closeMenu} link='faq'/>
                   </li>
                   <li className={css.modal_item}>
-                    <Link
-                      className={css.modal_link}
-                      to="contacts"
-                      offset={-100}
-                      onClick={closeMenu}
-                      smooth={true}
-                      duration={500}
-                    >
-                      Contact Us <FaArrowRight style={{ margin: '5px' }} />
-                    </Link>
-                  </li>
+                  <BurgerLink text='Contact Us' closeMenu={closeMenu} link='contacts'/>                  </li>
                 </ul>
               </nav>
               <div className={css.modal_social}>
-                <FaInstagram style={{ marginRight: '15px' }} />
-                <FaFacebook />
-              </div>
+                            <div>
+                                <a 
+                                    className={css.contacts__link}
+                                    href="/">                                    
+                                    <svg className={css.icon}>
+                                        <use href={`${icons}#icon-facebook`} />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <a 
+                                    className={css.contacts__link}
+                                    href="/">                                    
+                                    <svg className={css.icon}>
+                                        <use href={`${icons}#icon-instagram`} />
+                                    </svg>
+                                </a>
+                            </div>
+                            </div>
             </div>
           </div>
         </>

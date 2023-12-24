@@ -12,7 +12,7 @@
       font-weight: 300;
       letter-spacing: -0.04em;
       color: #173D33; 
-      align-self: flex-end;    
+      /* align-self: flex-end;     */
     }
     .quentity_pict{
       font-family: 'FiraSans';
@@ -50,12 +50,7 @@
   .button:hover .icon{
       fill: #97D28B;
   }
- /* .slider{
-  width: 100%;
-  gap: 48px;
- } */
-  
-
+ 
 @media only screen and (min-width: 360px) and (max-width: 767px) {
     .section {
       padding:  18px 0;
@@ -89,11 +84,7 @@
       justify-content: space-between;
       align-items: center;
      }
-     /* .slider_wrapper{
-      margin: 0 auto;
-     } */
-    
-  }
+    }
 
   
   @media screen and (min-width: 768px) {
@@ -116,7 +107,7 @@
      .wrapper_handlers{
       display: flex;
       justify-content: space-between;
-      align-items:center ;
+      align-self: flex-end;   
       width: 344px;
      }
      .wrapper_buttons{
@@ -124,6 +115,9 @@
     }
     .cases_text{
       width: 300px;
+    }
+    .current_pict{
+      align-self: flex-end;   
     }
     .cases_header::after {
       content: "";
@@ -145,11 +139,7 @@
       top: -105px;
       right: 0;
     }
-    /* .slider_wrapper{
-      display: flex;
-      justify-content: space-between;
-      gap: 24px;
-    } */
+    
   }
   
   @media screen and (min-width: 1440px) {
@@ -182,11 +172,11 @@
       background-color: #97D28B;
     }
     .prev_button{
-      top: -201px;
+      top: -205px;
       right: 108px;
     }
     .next_button{
-      top: -201px;
+      top: -205px;
       right: 0;
     }
     .icon{      

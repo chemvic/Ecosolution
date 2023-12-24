@@ -10,9 +10,9 @@ const [activeQuestion, setActiveQuestion]= useState(0);
 
 
    return (
-    <section  className={css.section}>
+    <section id={id} className={css.section}>
          <div className={css.grid_container}>            
-            <div id={id} className={css.title}><p className={css.title_text}>Frequently Asked<br/> Questions</p></div>
+            <div  className={css.title}><p className={css.title_text}>Frequently Asked<br/> Questions</p></div>
             <div className={css.questions}>
                {questions.map((question, index)=>(<HiddenAnswer
                 key={question.qwest}

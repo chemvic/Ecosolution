@@ -83,18 +83,6 @@ const Cases = ({id}) => {
        <p className={css.current_pict}>{currentSlide + 1}<span className={css.quentity_pict}> /5</span></p>
 
        <div className={css.wrapper_buttons}>
-        {/* <button className={css.button} >
-          <svg className={css.icon}>
-              <use href={`${icons}#icon-arrow-left`} />
-          </svg>
-        </button> */}
-        {/* <SamplePrevArrow /> */}
-        {/* <button className={css.button} >
-          <svg className={css.icon}>
-              <use href={`${icons}#icon-round-arrow-right`} />
-          </svg>
-        </button> */}
-
        </div>      
     </div>
   </div>     
