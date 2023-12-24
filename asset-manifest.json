@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Ecosolution/static/css/main.c803f26f.css",
+    "main.css": "/Ecosolution/static/css/main.7125b07b.css",
     "main.js": "/Ecosolution/static/js/main.2a02870c.js",
     "static/media/FiraSans-Regular.ttf": "/Ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/FiraSans-Light.ttf": "/Ecosolution/static/media/FiraSans-Light.7ece67e11e181a7292ef.ttf",
@@ -19,11 +19,11 @@
     "static/media/slick.ttf": "/Ecosolution/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Ecosolution/index.html",
-    "main.c803f26f.css.map": "/Ecosolution/static/css/main.c803f26f.css.map",
+    "main.7125b07b.css.map": "/Ecosolution/static/css/main.7125b07b.css.map",
     "main.2a02870c.js.map": "/Ecosolution/static/js/main.2a02870c.js.map"
   },
   "entrypoints": [
-    "static/css/main.c803f26f.css",
+    "static/css/main.7125b07b.css",
     "static/js/main.2a02870c.js"
   ]
 }
