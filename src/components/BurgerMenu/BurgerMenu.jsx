@@ -6,17 +6,19 @@ import BurgerLink from 'components/BurgerLink/BurgerLink';
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
+  const openMenu = () => {
     setIsOpen(!isOpen);
+    document.body.style.overflow = 'hidden';
   };
 
   const closeMenu = () => {
     setIsOpen(false);
+    document.body.style.overflow = 'visible';
   };
 
   return (
     <div>
-      <button className={css.burger_button} onClick={toggleMenu}>
+      <button className={css.burger_button} onClick={openMenu}>
         <svg className={css.menu_icon}>
           <use href={`${icons}#icon-menu`} />
         </svg>
@@ -25,7 +27,7 @@ const BurgerMenu = () => {
         <>
           <div className={css.overlay} onClick={closeMenu}></div>
           <div className={`${css.modal} ${isOpen ?css.open: ''}`}>
-          <button className={css.close_button} onClick={toggleMenu}>
+          <button className={css.close_button} onClick={closeMenu}>
             <svg className={css.close_icon}>
               <use href={`${icons}#icon-close`} />
             </svg> close

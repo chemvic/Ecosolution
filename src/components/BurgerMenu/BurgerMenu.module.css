@@ -1,3 +1,4 @@
+
 .menu_icon{
     fill: #229922;
     width: 16px;
@@ -103,9 +104,11 @@ fill: #97D28B;
   }
   
 .modal{
+  box-sizing: border-box;
   position: fixed;
   width: 320px;
   height: 701px;
+  /* height: 100vh; */
   border-radius: 25px;
   padding: 24px; 
   background-color: rgba(23,61,51,0.75);
@@ -114,7 +117,7 @@ fill: #97D28B;
   flex-direction: column;
   justify-content:flex-start;
   align-items: flex-start;
-  z-index: 2;
+  z-index: 3;
   transform: translateY(-100%);
   -webkit-transition-property: transform;
   transition-property:transform ;
@@ -154,17 +157,22 @@ fill: #97D28B;
 @media  screen and (min-width: 360px) and (max-width: 480px) {
    .modal{
     width: 320px;
+    height: 701px;
     top: 36px;
     left: 20px;
     right: 20px;
+    bottom: 36px;
    }
   }
   
   @media only screen and (min-width: 481px) and (max-width: 767px) {
     .modal{
         width: 320px;
-        top: 36px;       
-        right: 20px;    
+        height: 701px;
+        top: 36px;
+        left: 20px;
+        right: 20px;
+        bottom: 36px;    
        }
    }
   
@@ -180,8 +188,9 @@ fill: #97D28B;
     .modal{
         width: 365px;
         height: 873px;
-        top: 24px;
-       
+        /* height: 100vh; */
+        top: 24px; 
+        bottom: 24px;      
         right: 100px;
     
        }
