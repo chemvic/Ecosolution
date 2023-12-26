@@ -29,7 +29,8 @@ const [activeQuestion, setActiveQuestion]= useState(0);
                       className={css.button}
                       as='button'
                       type='button'
-                      to="contacts"                     
+                      to="contacts"
+                      offset={-100}                     
                       smooth={true}
                       duration={500}
                     >
