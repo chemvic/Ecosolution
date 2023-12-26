@@ -27,12 +27,13 @@ const BurgerMenu = () => {
         <>
           <div className={css.overlay} onClick={closeMenu}></div>
           <div className={`${css.modal} ${isOpen ?css.open: ''}`}>
+           <div>  
           <button className={css.close_button} onClick={closeMenu}>
             <svg className={css.close_icon}>
               <use href={`${icons}#icon-close`} />
             </svg> close
           </button>            
-          <div className={css.modal_wrapper}>
+          <div className={css.modal_wrapper}>           
               <nav>
                 <ul className={css.modal_list}>
                   <li className={css.modal_item}>
@@ -50,7 +51,7 @@ const BurgerMenu = () => {
                   <li className={css.modal_item}>
                   <BurgerLink text='Contact Us' closeMenu={closeMenu} link='contacts'/>                  </li>
                 </ul>
-              </nav>
+              </nav></div></div>
               <div className={css.modal_social}>
                             <div>
                                 <a 
@@ -71,7 +72,7 @@ const BurgerMenu = () => {
                                 </a>
                             </div>
                             </div>
-            </div>
+            
           </div>
         </>
       )}
