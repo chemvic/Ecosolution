@@ -1,4 +1,4 @@
-
+import { toast } from 'react-toastify';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import css from './Form.module.css';
@@ -29,7 +29,8 @@ const MessageForm = () => {
      }}
      validationSchema={schema}
      onSubmit={(values, {resetForm}) => {
-          console.log(values);
+      localStorage.setItem('formValues', JSON.stringify(values));
+      toast('Your message has been sent');
           resetForm();
      }}
    >

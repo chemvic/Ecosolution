@@ -89,8 +89,7 @@ const Cases = ({id}) => {
 
 
     <Slider {...settings} className={css.slider}>
-      <div className={css.slider_wrapper}>
-        
+      <div>        
       <SliderCard photo={lvivImage} alt={'Lviv'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
      description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
       </div>

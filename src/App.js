@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import css from './App.module.css';
 import Hero  from 'components/Hero/Hero';
 import Values from 'components/Values/Values';
@@ -20,6 +22,8 @@ import Footer from 'components/Footer/Footer';
     <Faq id="faq"/> 
     <ContactUs id="contacts"/>
     <Footer/>
+    <ToastContainer autoClose={1000}/>
+
     </div>
   );
 };
