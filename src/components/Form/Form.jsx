@@ -40,17 +40,17 @@ const MessageForm = () => {
         * Full name:            
         </label>
         <Field  className={`${css.input} ${errors.fullName && touched.fullName ? css.error : ''}`} name="fullName" type="text" placeholder="John Rosie"/>
-        <ErrorMessage name='fullName' component="div" className={css.input_error}/>
+        <ErrorMessage name='fullName' component="div" className={css.input_error} style={{top: `${window.innerWidth < 1440 ? '116' : '138' }`}}/>
         <label htmlFor="email">
         * E-mail: 
         </label>
         <Field  className={`${css.input} ${errors.email && touched.email ? css.error : ''}`} name="email" type="email" placeholder="johnrosie@gmail.com"/>
-        <ErrorMessage name='email' component="div" className={css.input_error}/>
+        <ErrorMessage name='email' component="div" className={css.input_error} style={{top: `${window.innerWidth < 1440 ? '202' : '230' }`}}/>
         <label htmlFor="phone">
         * Phone:   
         </label>
         <Field  className={`${css.input} ${errors.phone && touched.phone ? css.error : ''}`} name="phone" type="number" placeholder="380961234567"/>
-        <ErrorMessage name='phone' component="div" className={css.input_error}/>        
+        <ErrorMessage name='phone' component="div" className={css.input_error} style={{top: `${window.innerWidth < 1440 ? '288' : '322' }`}}/>        
         <label htmlFor="message">
         Message:              
         </label>
