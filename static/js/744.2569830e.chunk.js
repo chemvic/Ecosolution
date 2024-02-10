@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecosolution=self.webpackChunkecosolution||[]).push([[744],{1744:(e,s,o)=>{e.exports=o.p+"static/media/Zaporizhia.63f26b6ffb75b3940812.jpg"}}]);

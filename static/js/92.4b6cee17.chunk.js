@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecosolution=self.webpackChunkecosolution||[]).push([[92],{8092:(s,e,o)=>{s.exports=o.p+"static/media/ecosolution.2cc003d493fa51a2189a.svg"}}]);

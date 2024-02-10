@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecosolution=self.webpackChunkecosolution||[]).push([[946],{2946:(s,e,c)=>{s.exports=c.p+"static/media/icons.f62b58515ea9cb2256a7.svg"}}]);

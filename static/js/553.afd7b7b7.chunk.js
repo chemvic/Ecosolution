@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecosolution=self.webpackChunkecosolution||[]).push([[553],{7553:(e,s,c)=>{e.exports=c.p+"static/media/wind-farms-fields 1.5bb0c2fe33af74386401.jpg"}}]);

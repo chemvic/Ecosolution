@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecosolution=self.webpackChunkecosolution||[]).push([[784],{2784:(e,o,s)=>{e.exports=s.p+"static/media/Group logo.46206dc0bae6c0a2b9a9.svg"}}]);

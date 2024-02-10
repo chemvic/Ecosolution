@@ -1,7 +1,20 @@
 {
   "files": {
     "main.css": "/Ecosolution/static/css/main.2620219a.css",
-    "main.js": "/Ecosolution/static/js/main.e48cf937.js",
+    "main.js": "/Ecosolution/static/js/main.adba97b6.js",
+    "static/js/250.a7c679a2.chunk.js": "/Ecosolution/static/js/250.a7c679a2.chunk.js",
+    "static/js/784.a4abf8dd.chunk.js": "/Ecosolution/static/js/784.a4abf8dd.chunk.js",
+    "static/js/937.fcf89270.chunk.js": "/Ecosolution/static/js/937.fcf89270.chunk.js",
+    "static/js/221.2260d645.chunk.js": "/Ecosolution/static/js/221.2260d645.chunk.js",
+    "static/js/364.8762dc91.chunk.js": "/Ecosolution/static/js/364.8762dc91.chunk.js",
+    "static/js/126.ebf3d789.chunk.js": "/Ecosolution/static/js/126.ebf3d789.chunk.js",
+    "static/js/744.2569830e.chunk.js": "/Ecosolution/static/js/744.2569830e.chunk.js",
+    "static/js/186.3a5145b7.chunk.js": "/Ecosolution/static/js/186.3a5145b7.chunk.js",
+    "static/js/92.4b6cee17.chunk.js": "/Ecosolution/static/js/92.4b6cee17.chunk.js",
+    "static/js/946.8c8a928f.chunk.js": "/Ecosolution/static/js/946.8c8a928f.chunk.js",
+    "static/js/983.3cc4588d.chunk.js": "/Ecosolution/static/js/983.3cc4588d.chunk.js",
+    "static/js/553.afd7b7b7.chunk.js": "/Ecosolution/static/js/553.afd7b7b7.chunk.js",
+    "static/media/wind-farms-fields 1.jpg": "/Ecosolution/static/media/wind-farms-fields 1.5bb0c2fe33af74386401.jpg",
     "static/media/FiraSans-Regular.ttf": "/Ecosolution/static/media/FiraSans-Regular.f4eb295ecc2fb842d61c.ttf",
     "static/media/FiraSans-Light.ttf": "/Ecosolution/static/media/FiraSans-Light.7ece67e11e181a7292ef.ttf",
     "static/media/Wind-turbine.jpg": "/Ecosolution/static/media/Wind-turbine.c7dacde6e99d972e14d9.jpg",
@@ -14,16 +27,20 @@
     "static/media/Kherson.jpg": "/Ecosolution/static/media/Kherson.0a127671a9bd8256c425.jpg",
     "static/media/man-worker-firld-by-solar-panels 1.jpg": "/Ecosolution/static/media/man-worker-firld-by-solar-panels 1.ab39f17233c9e9e4d677.jpg",
     "static/media/icons.svg": "/Ecosolution/static/media/icons.f62b58515ea9cb2256a76f262d126812.svg",
+    "static/media/Group logo.svg": "/Ecosolution/static/media/Group logo.46206dc0bae6c0a2b9a9.svg",
+    "static/media/GREENERGY FOR LIFE.svg": "/Ecosolution/static/media/GREENERGY FOR LIFE.1f511e4a32a0e77bfb6e.svg",
+    "static/media/ecosolution.svg": "/Ecosolution/static/media/ecosolution.2cc003d493fa51a2189a.svg",
+    "static/media/logo1.svg": "/Ecosolution/static/media/logo1.b029bbdcce9fc6d36713.svg",
     "static/media/slick.svg": "/Ecosolution/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/Ecosolution/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/Ecosolution/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Ecosolution/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Ecosolution/index.html",
     "main.2620219a.css.map": "/Ecosolution/static/css/main.2620219a.css.map",
-    "main.e48cf937.js.map": "/Ecosolution/static/js/main.e48cf937.js.map"
+    "main.adba97b6.js.map": "/Ecosolution/static/js/main.adba97b6.js.map"
   },
   "entrypoints": [
     "static/css/main.2620219a.css",
-    "static/js/main.e48cf937.js"
+    "static/js/main.adba97b6.js"
   ]
 }

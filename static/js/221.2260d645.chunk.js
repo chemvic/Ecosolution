@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecosolution=self.webpackChunkecosolution||[]).push([[221],{4221:(e,s,o)=>{e.exports=o.p+"static/media/Lviv-region.0bcaf0ed840f436a700f.jpg"}}]);

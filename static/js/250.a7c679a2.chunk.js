@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkecosolution=self.webpackChunkecosolution||[]).push([[250],{3250:(e,s,o)=>{e.exports=o.p+"static/media/GREENERGY FOR LIFE.1f511e4a32a0e77bfb6e.svg"}}]);
