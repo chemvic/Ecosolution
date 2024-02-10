@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import lvivImage from '../../images/Lviv-region.jpg';
-import zhytomyrImage from '../../images/Zhytomyr.jpg';
-import rivneImage from '../../images/Rivne.jpg';
-import khersonImage from '../../images/Kherson.jpg';
-import zaporImage from '../../images/Zaporizhia.jpg';
+// import lvivImage from '../../images/Lviv-region.jpg';
+// import zhytomyrImage from '../../images/Zhytomyr.jpg';
+// import rivneImage from '../../images/Rivne.jpg';
+// import khersonImage from '../../images/Kherson.jpg';
+// import zaporImage from '../../images/Zaporizhia.jpg';
 import css from './Cases.module.css';
 import SliderCard from 'components/SliderCard/SliderCard';
 import icons from '../../images/icons.svg';
+import cards from './cards.json';
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -40,6 +41,25 @@ function SamplePrevArrow(props) {
 
 const Cases = ({id}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+   const importImages= async() => {
+       const imagesImported =[];
+
+    for(const card of cards){
+      try {
+        const image = await import(`../../images/${card.photo}`);
+        imagesImported.push(image.default);
+      } catch (error) {
+        console.error(`Failed to download photo: ${error}`);
+      };      
+    };
+    setImages(imagesImported);
+   };
+   importImages();
+  }, []);
+  
 
   const settings = {
     lazyLoad: true,
@@ -49,7 +69,7 @@ const Cases = ({id}) => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    initialSlide: 1,
+    initialSlide: 0,
     swipeToSlide: true,
     beforeChange: (current, next) => setCurrentSlide(next),
     responsive: [
@@ -89,27 +109,32 @@ const Cases = ({id}) => {
 
 
     <Slider {...settings} className={css.slider}>
-      <div>        
+      {/* <div>        
       <SliderCard photo={lvivImage} alt={'Lviv'} title={'Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”'} 
-     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+     description={'Wind Power for auto field irrigation'} date={'July 2023'}/>       
       </div>
       <div>
       <SliderCard photo={zhytomyrImage} alt={'Zhytomyr'} title={'Zhytomyr city Private Enterprise “Bosch”'} 
-     description={'Solar Panels for industrial use'} date={'November 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+     description={'Solar Panels for industrial use'} date={'November 2023'}/>       
       </div>
       <div>
       <SliderCard photo={rivneImage} alt={'Rivne'} title={'Rivne city Private Enterprise “Biotech”'} 
-     description={'Thermal modules'} date={'October 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+     description={'Thermal modules'} date={'October 2023'}/>       
       </div>
       <div>
       <SliderCard photo={khersonImage} alt={'Kherson'} title={'Kherson city Private Enterprise “HealthyFarm”'} 
-     description={'Wind power'} date={'September 2021'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
+     description={'Wind power'} date={'September 2021'}/>       
       </div>
       <div>
       <SliderCard photo={zaporImage} alt={'Zaporizhia'} title={'Zaporizhia city Private Enterprise “Biotech”'} 
-     description={'Mini nuclear stations'} date={'May 2023'}/>        {/* <h3><Card title='Openness' text='to the world, people, new ideas and projects'/></h3> */}
-      </div>
-      
+     description={'Mini nuclear stations'} date={'May 2023'}/>      
+      </div> */}
+      {cards.map(({alt, title, description, date}, index)=>(
+        <div key={description}>
+          <SliderCard photo={images[index]} alt={alt} title={title} 
+          description={description} date={date}/>      
+        </div>
+      ))}      
     </Slider>
     </section>
   );
