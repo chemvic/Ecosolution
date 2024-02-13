@@ -147,8 +147,11 @@ fill: #97D28B;
 .modal_social{
    display: flex; 
 }
-.modal_item{
+.modal_item:not(:last-child){
     margin-bottom: 8px;
+}
+.modal_item{
+    cursor: pointer;
 }
 
 @media  screen and (min-width: 360px) and (max-width: 480px) {
