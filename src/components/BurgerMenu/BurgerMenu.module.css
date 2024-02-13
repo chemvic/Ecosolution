@@ -102,6 +102,7 @@ fill: #97D28B;
     height: 100%;
     background-color: rgba(23, 61, 51, 0.25);
     z-index: 2;
+    overflow-y: scroll;
   }
   
 .modal{
@@ -117,13 +118,14 @@ fill: #97D28B;
   justify-content:space-between;
   max-height: 90vh;
   z-index: 3;
+  overflow-y: scroll;
   transform: translateY(-100%);
   -webkit-transition-property: transform;
   transition-property:transform ;
   -webkit-transition-duration: .3s;
           transition-duration: .3s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
  
 }
 .modal.open {
