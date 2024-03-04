@@ -116,7 +116,7 @@ fill: #97D28B;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
-  max-height: 90vh;
+  /* max-height: 90vh; */
   z-index: 3;
   overflow-y: scroll;
   transform: translateY(-100%);
@@ -159,27 +159,36 @@ fill: #97D28B;
 @media  screen and (min-width: 360px) and (max-width: 480px) {
    .modal{
     width: 320px; 
-    height: 90vh;
+    height: 701px;
+    /* height: 90vh; */
     top: 36px;
     right: 20px;
+    overflow-y: scroll;
+
    }
   }
   
   @media only screen and (min-width: 481px) and (max-width: 767px) {
     .modal{
         width: 320px;
-        height: 90vh;
+        /* height: 90vh; */
         top: 36px;
+        height: 701px;
         right: 20px;
+        overflow-y: scroll;
+
        }
    }
   
   @media screen and (min-width: 768px) {
     .modal{
         width: 320px;
-        height: 90vh;
+        /* height: 90vh; */
+        height: 701px;
         top: 36px;
-        right: 30px;    
+        right: 30px; 
+        overflow-y: scroll;
+   
        }  
     }
   
@@ -187,8 +196,11 @@ fill: #97D28B;
   @media screen and (min-width: 1440px) {
     .modal{
         width: 365px;
-        height: 90vh;
+        /* height: 90vh; */
+        height: 873px;
         top: 24px; 
         padding: 24px;
-        right: 100px;      
+        right: 100px; 
+        overflow-y: scroll;
+     
   }}

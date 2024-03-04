@@ -12,7 +12,7 @@
       
         <div className={css.wrapper}>
           <div className={css.description_wrapper}>
-            <p className={css.description}>Development and implementation of renewable non-pollutingF energy sources,
+            <p className={css.description}>Development and implementation of renewable non-polluting energy sources,
              generating power generation using energy wind, sun, water, biomass
             </p>
           </div>          
